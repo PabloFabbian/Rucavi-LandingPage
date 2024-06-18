@@ -2,9 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Para navegadores Webkit (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  background-color: #c4acd8be;
+  width: 13px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c4acd8;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #52495560;
+}
+
+/*------------------------------------------------*/
+
 *{
   padding: 0;
-  margin: 0;
+  margin-left: 0;
   box-sizing: border-box;
 }
 
@@ -13,6 +30,19 @@
   margin-right: 26px;
 }
 
+.nav-li:hover {
+color: #8c00ff !important;
+}
+
 .navbar-degrade {
   background: linear-gradient(to bottom, #DDD1FF, #DCD0FE);
+}
+.hero-degrade {
+  background: linear-gradient(to bottom, #DCD0FE, #D4C5FE);
+}
+.about-degrade {
+  background: linear-gradient(to bottom, #D4C5FE, #C9B4FF);
+}
+.tech-degrade {
+  background: linear-gradient(to bottom, #C9B4FF, #B79DFF);
 }
