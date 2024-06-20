@@ -42,7 +42,9 @@ function About() {
                 <section className="sections py-4 px-48 min-w-[54rem]" ref={(el) => sectionsRef.current[0] = el}>
                     <h1 className="text-5xl text-indigo-600 font-bold mb-5">Sobre Nosotros</h1>
                     <div className="text-purple-500 mt-12">
-                        <img className="flecha" alt="" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#EBE5FF" class='absolute left-40 top-24' width="50" height="50">
+                            <path d="M17 15.586 6.707 5.293 5.293 6.707 15.586 17H7v2h12V7h-2v8.586z"/>
+                        </svg>
                         <h2 className="text-2xl font-semibold text-violet-500 mb-8">[Consultoría de sistemas de información]</h2>
                         <p className="mb-4 text-xl">En RUCAVI nos definimos no solo como una empresa de consultoría de sistemas de información, sino como un equipo donde
                             <span className="font-bold"> la colaboración con nuestros clientes es fundamental.</span>
@@ -53,7 +55,7 @@ function About() {
                             que se adapte a las necesidades específicas de cada proyecto.
                         </p>
                     </div>
-                    <Button className="SinergiaButton mt-3">SINERGIA</Button>
+                    <Button className="SinergiaButton bg-purple-200 text-purple-500 rounded-2xl mt-20 hover:bg-purple-300">SINERGIA</Button>
                 </section>
 
                 {/* Segunda tarjeta - Cómo nace la empresa */}
@@ -69,7 +71,7 @@ function About() {
                         <p className="mb-4 text-xl">Nuestro equipo, formado por profesionales comprometidos, combina la experiencia y el conocimiento para abordar los desafíos de nuestros clientes con confianza y diligencia.</p>
                         <p className="mb-4 text-xl">En RUCAVI nos enorgullece contar con un equipo que prioriza la satisfacción del cliente y la excelencia en cada proyecto que emprendemos.</p>
                     </div>
-                    <Button className="EquipoButton mt-3">EQUIPO</Button>
+                    <Button className="EquipoButton bg-purple-200 text-purple-500 rounded-2xl mt-20 hover:bg-purple-300">EQUIPO</Button>
                 </section>
 
                 {/* Tercera tarjeta - Sobre Servicios */}
@@ -87,7 +89,7 @@ function About() {
                             y su utilización para impulsar el éxito de nuestros clientes.
                         </p>
                     </div>
-                    <Button className="SolucionesButton mt-3">SOLUCIONES</Button>
+                    <Button className="SolucionesButton bg-purple-200 text-purple-500 rounded-2xl mt-12 hover:bg-purple-300">SOLUCIONES</Button>
                 </section>
             </div>
         </div>
