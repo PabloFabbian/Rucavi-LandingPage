@@ -44,5 +44,77 @@ color: #8c00ff !important;
   background: linear-gradient(to bottom, #D4C5FE, #C9B4FF);
 }
 .tech-degrade {
-  background: linear-gradient(to bottom, #C9B4FF, #B79DFF);
+  background: linear-gradient(to bottom, #C9B4FF, #BDA6FF);
+}
+.why-degrade {
+  background: linear-gradient(to bottom, #BDA6FF, #A98CFF);
+}
+
+/*------------------------------------------------*/
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.carousel {
+  display: flex;
+  width: max-content;
+  animation: scroll 55s linear infinite;
+}
+
+.carousel-item {
+  display: flex;
+  align-items: center;
+  width: auto;
+  padding: 0;
+  margin-inline: 14px;
+}
+
+.carousel-logo {
+  width: 70px;
+  height: 70px;
+  margin-left: 20px;
+  margin-right: 15px;
+}
+
+.carousel-text {
+  flex: 1;
+}
+
+.carousel-text .block {
+  display: block;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% / 2));
+  }
+}
+
+/* Ajustes adicionales para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .carousel {
+    animation: scroll-small 60s linear infinite;
+  }
+
+  @keyframes scroll-small {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% / 2));
+    }
+  }
+}
+
+.WhyButton {
+  color: #7C50FF;
+  font-size: 2.25rem;
 }

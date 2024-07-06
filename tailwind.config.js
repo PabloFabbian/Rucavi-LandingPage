@@ -16,6 +16,7 @@ export default {
         '5000': '5000ms', // 5 seconds
         '10000': '10000ms', // 10 seconds
       },
+      poppins: ['Poppins', 'sans-serif'],
     },
   },
   plugins: [

@@ -1,8 +1,9 @@
 import React from 'react'
-import Navigation from "./components/Navbar/Navigation"
-import Hero from "./components/HeroSection/Hero"
-import About from "./components/AboutUs/About"
-import Techstack from './components/TechStack/Techstack'
+import Navigation from "./components/Navigation"
+import Hero from "./components/Hero"
+import About from "./components/About"
+import Techstack from './components/Techstack'
+import WhyRucavi from './components/WhyRucavi'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <About />
       <Techstack />
+      <WhyRucavi />
     </>
   )
 }

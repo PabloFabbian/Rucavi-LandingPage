@@ -9,6 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 function About() {
     const containerRef = useRef(null);
     const sectionsRef = useRef([]);
+    const lineRef = useRef(null);
 
     useGSAP(() => {
         const container = containerRef.current;
@@ -26,7 +27,19 @@ function About() {
             scrollTrigger: {
                 trigger: container,
                 pin: true,
-                scrub: 1,
+                scrub: 0.6,
+                end: () => `+=${totalWidth - container.offsetWidth}`,
+            },
+        });
+
+        // Animación para la línea
+        gsap.to(lineRef.current, {
+            xPercent: -20 * (sections.length - 1),
+            ease: "none",
+            scrollTrigger: {
+                trigger: container,
+                scrub: 0.6,
+                start: 'top top',
                 end: () => `+=${totalWidth - container.offsetWidth}`,
             },
         });
@@ -35,14 +48,14 @@ function About() {
     return (
         <div className='about-degrade overflow-hidden relative py-14' ref={containerRef}>
             {/* Línea horizontal que indica el ancho */}
-            <hr className='absolute top-[13.5rem] left-0 w-[calc(50rem*3)] border-t-1 border-stone-800 ml-48 -pr-68' />
+            <div ref={lineRef} className='sticky top-[10.5rem] left-0 w-[calc(49.5rem*3)] h-0.5 bg-gray-500 ml-48'></div>
 
             <div className="flex py-20 w-full">
                 {/* Primera tarjeta - Sobre Nosotros */}
                 <section className="sections py-4 px-48 min-w-[54rem]" ref={(el) => sectionsRef.current[0] = el}>
                     <h1 className="text-5xl text-indigo-600 font-bold mb-5">Sobre Nosotros</h1>
                     <div className="text-purple-500 mt-12">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#EBE5FF" class='absolute left-40 top-24' width="50" height="50">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#EBE5FF" className='absolute left-40 top-24' width="50" height="50">
                             <path d="M17 15.586 6.707 5.293 5.293 6.707 15.586 17H7v2h12V7h-2v8.586z"/>
                         </svg>
                         <h2 className="text-2xl font-semibold text-violet-500 mb-8">[Consultoría de sistemas de información]</h2>
