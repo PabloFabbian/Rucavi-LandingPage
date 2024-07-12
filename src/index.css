@@ -34,6 +34,18 @@
 color: #8c00ff !important;
 }
 
+#TechStack {
+  scroll-margin-top: 250px;
+}
+
+#JoinUs {
+  scroll-margin-top: -10px;
+}
+
+#Partners {
+  scroll-margin-top: 250px;
+}
+
 .navbar-degrade {
   background: linear-gradient(to bottom, #DDD1FF, #DCD0FE);
 }
@@ -48,6 +60,12 @@ color: #8c00ff !important;
 }
 .why-degrade {
   background: linear-gradient(to bottom, #BDA6FF, #A98CFF);
+}
+.partners-degrade {
+  background: linear-gradient(to bottom, #A98CFF, #A282FE);
+}
+.contactus-degrade {
+  background: linear-gradient(to bottom, #A282FF, #7E52FF);
 }
 
 /*------------------------------------------------*/
@@ -112,9 +130,4 @@ color: #8c00ff !important;
       transform: translateX(calc(-100% / 2));
     }
   }
-}
-
-.WhyButton {
-  color: #7C50FF;
-  font-size: 2.25rem;
 }

@@ -21,7 +21,7 @@ const tecnologias = [
 
 function Techstack() {
     return (
-        <div className='pb-20 tech-degrade'>
+        <div className='pb-20 tech-degrade' id='TechStack'>
             <section className='flex flex-nowrap gap-0 mx-16'>
                 <div className="folder w-1/2 rounded-t-3xl pt-16 pb-10 bg-[#EBE5FF] text-left text-5xl font-[650] px-40 tracking-wide leading-12">
                     Tecnologías con las que trabajamos
@@ -42,8 +42,8 @@ function Techstack() {
                                 <div key={index} className="carousel-item">
                                     <img src={tech.logo} alt={tech.tecnologia} className="carousel-logo" />
                                     <div className="carousel-text">
-                                        <h5 className="text-purple-600 text-[1.6rem] font-bold leading-6 pb-2">{tech.tecnologia}</h5>
-                                        <p className="text-purple-600 leading-4 text-balance">
+                                        <h5 className="text-[#5C24FF] text-[1.6rem] font-bold leading-6 pb-2">{tech.tecnologia}</h5>
+                                        <p className="text-[#9571FF] leading-4 text-balance">
                                             {firstPart}
                                             <span className="block">{secondPart}</span>
                                         </p>
@@ -61,8 +61,8 @@ function Techstack() {
                                 <div key={index + tecnologias.length} className="carousel-item">
                                     <img src={tech.logo} alt={tech.tecnologia} className="carousel-logo" />
                                     <div className="carousel-text">
-                                        <h5 className="text-purple-600 text-[1.6rem] font-bold leading-6 pb-2">{tech.tecnologia}</h5>
-                                        <p className="text-purple-600 leading-4 text-balance">
+                                        <h5 className="text-[#5C24FF] text-[1.6rem] font-bold leading-6 pb-2">{tech.tecnologia}</h5>
+                                        <p className="text-[#9571FF] leading-4 text-balance">
                                             {firstPart}
                                             <span className="block">{secondPart}</span>
                                         </p>

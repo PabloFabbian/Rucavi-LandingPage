@@ -2,7 +2,6 @@ import React, { useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
-import { Button } from "flowbite-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -45,8 +44,16 @@ function About() {
         });
     }, []);
 
+    const SmallButton = ({ children }) => {
+        return (
+            <button className="bg-purple-200 text-indigo-600 font-semibold rounded-2xl mt-20 px-4 py-2 hover:bg-purple-300 transition-colors duration-300 ease-in-out">
+                {children}
+            </button>
+        );
+    };
+
     return (
-        <div className='about-degrade overflow-hidden relative py-14' ref={containerRef}>
+        <div className='about-degrade overflow-hidden relative py-14 pt-[80px]' id='AboutUs' ref={containerRef}>
             {/* Línea horizontal que indica el ancho */}
             <div ref={lineRef} className='sticky top-[10.5rem] left-0 w-[calc(49.5rem*3)] h-0.5 bg-gray-500 ml-48'></div>
 
@@ -68,7 +75,7 @@ function About() {
                             que se adapte a las necesidades específicas de cada proyecto.
                         </p>
                     </div>
-                    <Button className="SinergiaButton bg-purple-200 text-purple-500 rounded-2xl mt-20 hover:bg-purple-300">SINERGIA</Button>
+                    <SmallButton>SINERGIA</SmallButton>
                 </section>
 
                 {/* Segunda tarjeta - Cómo nace la empresa */}
@@ -84,7 +91,7 @@ function About() {
                         <p className="mb-4 text-xl">Nuestro equipo, formado por profesionales comprometidos, combina la experiencia y el conocimiento para abordar los desafíos de nuestros clientes con confianza y diligencia.</p>
                         <p className="mb-4 text-xl">En RUCAVI nos enorgullece contar con un equipo que prioriza la satisfacción del cliente y la excelencia en cada proyecto que emprendemos.</p>
                     </div>
-                    <Button className="EquipoButton bg-purple-200 text-purple-500 rounded-2xl mt-20 hover:bg-purple-300">EQUIPO</Button>
+                    <SmallButton>EQUIPO</SmallButton>
                 </section>
 
                 {/* Tercera tarjeta - Sobre Servicios */}
@@ -98,11 +105,11 @@ function About() {
                             <span className="font-bold"> un servicio excepcional que se adapte a las necesidades únicas de cada cliente</span>
                             , ya sea el diseño de sistemas personalizados o la implementación de soluciones innovadoras.
                         </p>
-                        <p className="mb-4 text-xl">En un mundo digital en constante evolución, nos sentimos honrados de ser líderes en la adopción de tecnologías emergentes
+                        <p className="-mb-3.5 text-xl">En un mundo digital en constante evolución, nos sentimos honrados de ser líderes en la adopción de tecnologías emergentes
                             y su utilización para impulsar el éxito de nuestros clientes.
                         </p>
                     </div>
-                    <Button className="SolucionesButton bg-purple-200 text-purple-500 rounded-2xl mt-12 hover:bg-purple-300">SOLUCIONES</Button>
+                    <SmallButton>SOLUCIONES</SmallButton>
                 </section>
             </div>
         </div>

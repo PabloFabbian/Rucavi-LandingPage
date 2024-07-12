@@ -4,6 +4,8 @@ import Hero from "./components/Hero"
 import About from "./components/About"
 import Techstack from './components/Techstack'
 import WhyRucavi from './components/WhyRucavi'
+import Partners from './components/Partners'
+import ContactUs from './components/ContactUs'
 
 function App() {
 
@@ -14,6 +16,8 @@ function App() {
       <About />
       <Techstack />
       <WhyRucavi />
+      <Partners />
+      <ContactUs />
     </>
   )
 }
