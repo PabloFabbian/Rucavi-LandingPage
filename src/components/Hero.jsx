@@ -20,7 +20,7 @@ function Hero() {
                 <header className="relative z-10 flex flex-col items-left p-24">
                     <h1 className="text-6xl font-[700] tracking-wide text-violet-100">Tu aliado estratégico</h1>
                     <h1 className="text-6xl font-[700] tracking-wide text-violet-100 mb-8">en tecnología.</h1>
-                    <h3 className="text-[2rem] font-[500] text-[#5C26FD] tracking-wide ml-1">Consultora IT</h3>
+                    <h3 className="text-[2rem] font-[500] text-[#5C26FD] tracking-wide ml-1">Consultora IT.</h3>
                 </header>
                 <section className='relative z-10 flex flex-col tracking-wide py-24 pl-24'>
                     <h2 className='text-3xl font-normal text-violet-100'>¿Buscas <span className='font-bold'>soluciones</span> de alto</h2>

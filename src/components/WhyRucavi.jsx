@@ -1,5 +1,6 @@
 import React from 'react';
 import LaptopByN from '../assets/LaptopByN.jpg';
+import WhiteArrowIcon from '../assets/WhiteArrowIcon.svg'
 
 const WhyRucavi = () => {
     return (
@@ -23,6 +24,7 @@ const WhyRucavi = () => {
                     <h3 className="text-[1.975rem] font-semibold mb-2 text-[#7C50FF] pt-4 -ml-4">¿Por qué sumarte a la comunidad de RUCAVI?</h3>
                     <hr className="border-gray-900 mt-8 w-5/6" />
                     <div className="mb-4 text-[1.65rem] text-gray-200 font-[350] leading-[1.05] mt-6 pr-48">
+                    <img src={WhiteArrowIcon} style={{ position: 'absolute', left: '8rem', top: '201.6rem', height: '1.5rem', width: '1.5rem' }} />
                         <p>En RUCAVI, estamos constantemente buscando mentes brillantes y apasionadas por la tecnología para unirse a nuestro equipo.
                         <br /><br />
                         Si te apasiona la innovación y queres enfrentar nuevos desafíos ¡Nos encantaría conocerte!

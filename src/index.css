@@ -31,23 +31,29 @@
 }
 
 .nav-li:hover {
-color: #8c00ff !important;
+  color: #8c00ff !important;
+}
+
+.pin-spacer {
+  background: linear-gradient(to bottom, #D4C5FE, #C9B4FF);
 }
 
 #TechStack {
   scroll-margin-top: 250px;
 }
-
 #JoinUs {
   scroll-margin-top: -10px;
 }
-
 #Partners {
   scroll-margin-top: 250px;
 }
 
-.navbar-degrade {
+.navbar-degrade1 {
   background: linear-gradient(to bottom, #DDD1FF, #DCD0FE);
+}
+.navbar-degrade2 {
+  background: linear-gradient(to bottom, #cbb9fcad, #d1c3f8b0);
+  backdrop-filter: blur(6px);
 }
 .hero-degrade {
   background: linear-gradient(to bottom, #DCD0FE, #D4C5FE);

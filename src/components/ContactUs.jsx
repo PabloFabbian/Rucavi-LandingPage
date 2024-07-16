@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import Rucavi from '../assets/Rucavi-white-txt.svg';
 
 const ContactUs = () => {
@@ -19,20 +20,28 @@ const ContactUs = () => {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
-        // Aquí puedes agregar la lógica para enviar el formulario al backend
-        setTimeout(() => {
+
+        try {
+            const result = await emailjs.send(
+                'service_01ijrdq',  // Reemplaza con tu Service ID de EmailJS
+                'template_uyqprzm', // Reemplaza con tu Template ID de EmailJS
+                formData,
+                'nJenqIBnz8z2GP05O'      // Reemplaza con tu User ID de EmailJS
+            );
+            console.log(result.text);
             setLoading(false);
             setSubmitted(true);
-            console.log('Form data submitted:', formData);
-            // Restablecer el formulario y el estado después de 3 segundos
             setTimeout(() => {
                 setSubmitted(false);
                 setFormData({ name: '', email: '', message: '' });
             }, 3000);
-        }, 2000);
+        } catch (error) {
+            console.log(error.text);
+            setLoading(false);
+        }
     };
 
     return (
@@ -80,7 +89,6 @@ const ContactUs = () => {
                     </div>
                     <button
                         type="submit"
-                        onClick={handleSubmit}
                         className={`bg-[#EBE5FF] font-medium text-[#5C23FE] text-2xl px-7 pb-1.5 pt-1 rounded-2xl mt-14 hover:cursor-pointer
                         ${loading ? 'cursor-wait' : 'hover:bg-[#D1C9FF] hover:text-[#3C0FD8]'} 
                         ${submitted ? 'cursor-default' : ''}`}

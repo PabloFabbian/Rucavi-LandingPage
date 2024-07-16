@@ -4,27 +4,36 @@ import useScrollDirection from './useScrollDirection';
 
 function Navigation() {
     const [isLoaded, setIsLoaded] = useState(false);
+    const [isTop, setIsTop] = useState(true);
     const scrollDirection = useScrollDirection();
 
     useEffect(() => {
         setIsLoaded(true);
+        
+        const handleScroll = () => {
+            setIsTop(window.scrollY === 0);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
     }, []);
 
-    // Función para hacer scroll suave al hacer clic en los enlaces del navbar
     const handleSmoothScroll = (event, targetId) => {
         event.preventDefault();
         const target = document.querySelector(targetId);
         if (target) {
             target.scrollIntoView({
-                behavior: 'smooth', // Scroll suave
-                block: 'start'      // Alinea el elemento en la parte superior del viewport
+                behavior: 'smooth',
+                block: 'start'
             });
         }
     };
 
     return (
-        <div className={`navbar-degrade fixed w-full transition-transform duration-300 ${scrollDirection === 'up' ? 'translate-y-0' : '-translate-y-full'} z-40`}>
-            <Navbar fluid className='navbar-degrade py-5'>
+        <div className={`fixed w-full transition-transform duration-300 ${scrollDirection === 'up' ? 'translate-y-0' : '-translate-y-full'} z-40`}>
+            <Navbar fluid className={`py-5 ${isTop ? 'navbar-degrade1' : 'navbar-degrade2'}`}>
                 <Navbar.Brand
                     onClick={(e) => handleSmoothScroll(e, '#Home')}
                     className={`ml-8 transform transition-transform duration-1500 hover:cursor-pointer ${
