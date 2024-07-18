@@ -26,10 +26,10 @@ const ContactUs = () => {
 
         try {
             const result = await emailjs.send(
-                'service_01ijrdq',  // Reemplaza con tu Service ID de EmailJS
-                'template_uyqprzm', // Reemplaza con tu Template ID de EmailJS
+                import.meta.env.VITE_EMAILJS_SERVICE_ID,
+                import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
                 formData,
-                'nJenqIBnz8z2GP05O'      // Reemplaza con tu User ID de EmailJS
+                import.meta.env.VITE_EMAILJS_USER_ID
             );
             console.log(result.text);
             setLoading(false);
@@ -45,51 +45,51 @@ const ContactUs = () => {
     };
 
     return (
-        <div className='contactus-degrade' id='ContactUs'>
-            <div className="flex flex-col md:flex-row items-center justify-center px-28 pb-24">
-                <form onSubmit={handleSubmit} className="w-full md:w-1/2 p-4 mr-24">
+        <div className='contactus-degrade pt-16' id='ContactUs'>
+            <div className="flex flex-col md:flex-row items-top justify-center px-28 pb-24">
+                <form onSubmit={handleSubmit} className="w-full md:w-1/2 p-4 mr-10">
                     <h1 className="text-[#EBE5FF] font-bold text-7xl">Contactanos</h1>
-                    <div className="mb-6 ">
-                        <p className="text-[#1D1C24] text-xl mt-12 mb-6">Nombre</p>
+                    <div className="mt-6">
                         <input
                             type="text"
                             name="name"
                             autoComplete="name"
+                            placeholder="Nombre"
                             value={formData.name}
                             onChange={handleChange}
-                            className="w-full p-2.5 rounded-2xl bg-[#9F7EFF] text-white border-[#C6B4FE] outline-white mb-[4.4rem] "
+                            className="w-full p-2.5 rounded-3xl bg-[#9F7EFF] text-white border-[#C6B4FE] outline-white mb-2 placeholder-[#1D1C24] text-xl mt-12 pl-6"
                             required
                         />
                     </div>
-                    <div className="mb-6 ">
-                        <p className="text-[#1D1C24] text-xl mb-6">Email</p>
-                        <input
-                            type="email"
-                            name="email"
-                            autoComplete="email"
-                            value={formData.email}
-                            onChange={handleChange}
-                            className="w-full p-2.5 rounded-2xl bg-[#9F7EFF] text-white border-[#C6B4FE] outline-white mb-14"
-                            required
-                        />
-                    </div>
-                </form>
-                <div className="w-full md:w-1/2 p-4">
-                    <h2 className="text-[#5C24FF] font-semibold text-3xl mt-20">Formulario de contacto.</h2>
-                    <div className="mb-6 ">
-                        <p className="text-[#1D1C24] text-xl mt-12 mb-6">Mensaje</p>
+                    <div className="mb-6">
                         <textarea
                             name="message"
+                            placeholder="Mensaje"
                             value={formData.message}
                             onChange={handleChange}
-                            className="w-full p-2 rounded-3xl bg-[#9F7EFF] text-white border-[#C6B4FE] outline-white"
+                            className="w-full p-2 rounded-3xl bg-[#9F7EFF] text-white border-[#C6B4FE] outline-white placeholder-[#1D1C24] text-xl mt-12 pl-6 pt-4"
                             rows="9"
                             required
                         ></textarea>
                     </div>
+                </form>
+                <div className="w-full md:w-1/2 p-4 flex flex-col">
+                    <h2 className="text-[#5C24FF] font-semibold text-3xl pl-20 mt-8 mb-[3.1rem]">Formulario de contacto.</h2>
+                    <div className="mt-6">
+                        <input
+                            type="email"
+                            name="email"
+                            autoComplete="email"
+                            placeholder="Email"
+                            value={formData.email}
+                            onChange={handleChange}
+                            className="w-full p-2.5 rounded-3xl bg-[#9F7EFF] text-white border-[#C6B4FE] outline-white placeholder-[#1D1C24] text-xl pl-6"
+                            required
+                        />
+                    </div>
                     <button
                         type="submit"
-                        className={`bg-[#EBE5FF] font-medium text-[#5C23FE] text-2xl px-7 pb-1.5 pt-1 rounded-2xl mt-14 hover:cursor-pointer
+                        className={`bg-[#EBE5FF] font-medium text-[#5C23FE] text-2xl px-7 pb-1.5 pt-1 rounded-3xl hover:cursor-pointer mt-auto w-min ml-20 mb-2
                         ${loading ? 'cursor-wait' : 'hover:bg-[#D1C9FF] hover:text-[#3C0FD8]'} 
                         ${submitted ? 'cursor-default' : ''}`}
                         disabled={loading || submitted}
@@ -115,8 +115,8 @@ const ContactUs = () => {
                     </button>
                 </div>
             </div>
-            <hr className="border-[#EBE6FD] mx-32" />
-            <div className='pt-8 pb-10 pl-[16rem]'>
+            <hr className="border-[#EBE6FD] mx-32 mt-20" />
+            <div className='pt-8 pb-10 pl-[22.5rem]'>
                 <img src={Rucavi} alt="Rucavi" className="w-full h-8" />
             </div>
         </div>

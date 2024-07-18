@@ -12,7 +12,7 @@ const tecnologias = [
     { tecnologia: 'Git', logo: LOGO1, descrip: 'Software de control de versiones' },
     { tecnologia: '.Net', logo: LOGO2, descrip: 'Framework de Microsoft' },
     { tecnologia: 'Java', logo: LOGO3, descrip: 'Lenguaje de programación' },
-    { tecnologia: 'Node', logo: LOGO4, descrip: 'Framework de backend' },
+    { tecnologia: 'Node', logo: LOGO4, descrip: 'Framework de back-end' },
     { tecnologia: 'React', logo: LOGO5, descrip: 'Biblioteca de Javascript de código abierto' },
     { tecnologia: 'Angular', logo: LOGO6, descrip: 'Framework para aplicaciones web' },
     { tecnologia: 'Azure Cloud', logo: LOGO7, descrip: 'Plataforma de computación en la nube' },
