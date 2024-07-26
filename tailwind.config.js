@@ -17,10 +17,12 @@ export default {
         '10000': '10000ms', // 10 seconds
       },
       poppins: ['Poppins', 'sans-serif'],
+      borderRadius: {
+        '7xl': '16rem', // Ajusta el valor según tus necesidades
+      },
     },
   },
   plugins: [
     flowbite.plugin(),
   ],
 }
-

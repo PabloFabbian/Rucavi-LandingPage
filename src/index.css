@@ -19,7 +19,7 @@
 
 /*------------------------------------------------*/
 
-*{
+* {
   padding: 0;
   margin-left: 0;
   box-sizing: border-box;
@@ -41,37 +41,83 @@
 #TechStack {
   scroll-margin-top: 250px;
 }
+
 #JoinUs {
-  scroll-margin-top: -10px;
+  scroll-margin-top: 40px;
 }
+
 #Partners {
-  scroll-margin-top: 250px;
+  scroll-margin-top: 260px;
 }
 
 .navbar-degrade1 {
   background: linear-gradient(to bottom, #DDD1FF, #DCD0FE);
 }
+
 .navbar-degrade2 {
-  background: linear-gradient(to bottom, #cbb9fcad, #d1c3f8b0);
+  background: linear-gradient(to bottom, #ddd1ffa4, #d1c3f8b0);
   backdrop-filter: blur(5.25px);
 }
+
 .hero-degrade {
   background: linear-gradient(to bottom, #DCD0FE, #D4C5FE);
 }
+
 .about-degrade {
   background: linear-gradient(to bottom, #D4C5FE, #C9B4FF);
 }
+
 .tech-degrade {
   background: linear-gradient(to bottom, #C9B4FF, #BDA6FF);
 }
+
+.folder-degrade {
+  background: linear-gradient(to bottom, #C9B4FF, #C4AEFF);
+}
+
 .why-degrade {
   background: linear-gradient(to bottom, #BDA6FF, #A98CFF);
 }
+
 .partners-degrade {
   background: linear-gradient(to bottom, #A98CFF, #A282FE);
 }
+
 .contactus-degrade {
   background: linear-gradient(to bottom, #A282FF, #7E52FF);
+}
+
+/*------------------------------------------------*/
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.fade-in-delay-1 {
+  animation-delay: 1.5s;
+}
+
+.fade-in-delay-2 {
+  animation-delay: 2s;
+}
+
+.fade-in-button {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 2.6s;
 }
 
 /*------------------------------------------------*/
@@ -117,6 +163,7 @@
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(calc(-100% / 2));
   }
@@ -124,6 +171,10 @@
 
 /* Ajustes adicionales para pantallas más pequeñas */
 @media (max-width: 768px) {
+  .navbar-degrade1 {
+    background: linear-gradient(to bottom, #EAE4FE, #DCD0FE);
+  }
+
   .carousel {
     animation: scroll-small 60s linear infinite;
   }
@@ -132,8 +183,25 @@
     0% {
       transform: translateX(0);
     }
+
     100% {
       transform: translateX(calc(-100% / 2));
     }
   }
+}
+
+.partner-logo {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: transform 1.2s ease-out, opacity 1.2s ease-out;
+}
+
+.partner-logo.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.partner-logo:hover {
+  transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
 }

@@ -26,8 +26,10 @@ function Techstack() {
                 <div className="folder w-1/2 rounded-t-3xl pt-16 pb-10 bg-[#EBE5FF] text-left text-5xl font-[650] px-40 tracking-wide leading-12">
                     Tecnologías con las que trabajamos
                 </div>
-                <div className="folder w-1/2 align-right pt-20 font-semibold text-2xl text-center text-purple-500 tracking-wide">
-                    <p className='align-middle'>¿Buscas soluciones de alto impacto?</p>
+                <div className='bg-[#EBE5FF] w-1/2 flex items-center justify-center'>
+                    <div className="folder folder-degrade w-full h-full flex items-center justify-center rounded-bl-3xl bg-[#C8B3FF] bg-clip-border font-semibold text-2xl text-center text-purple-500 tracking-wide">
+                        <p>¿Buscas soluciones de alto impacto?</p>
+                    </div>
                 </div>
             </section>
             <div className="folder mx-16 rounded-b-3xl rounded-tr-3xl py-16 bg-[#EBE5FF]">

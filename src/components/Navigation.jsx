@@ -9,7 +9,7 @@ function Navigation() {
 
     useEffect(() => {
         setIsLoaded(true);
-        
+
         const handleScroll = () => {
             setIsTop(window.scrollY === 0);
         };
@@ -32,16 +32,15 @@ function Navigation() {
     };
 
     return (
-        <div className={`fixed w-full transition-transform duration-300 ${scrollDirection === 'up' ? 'translate-y-0' : '-translate-y-full'} z-40`}>
-            <Navbar fluid className={`py-5 ${isTop ? 'navbar-degrade1' : 'navbar-degrade2'}`}>
+        <div className={`fixed w-full transition-transform duration-250 ${scrollDirection === 'up' ? 'translate-y-0' : '-translate-y-full'} z-40`}>
+            <Navbar fluid className={`py-4 ${isTop ? 'navbar-degrade1' : 'navbar-degrade2'}`}>
                 <Navbar.Brand
                     onClick={(e) => handleSmoothScroll(e, '#Home')}
-                    className={`ml-8 transform transition-transform duration-1500 hover:cursor-pointer ${
-                        isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-80'
-                    }`}
+                    className={`ml-8 transform transition-transform duration-1500 hover:cursor-pointer ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-80'
+                        }`}
                 >
                     <img src="./src/assets/Rucavi-logo.webp" className="h-11 mr-6" alt="Rucavi Logo" />
-                    <img src="./src/assets/Rucavi-txt.webp" className="h-8" alt="Rucavi" />
+                    <img src="./src/assets/Rucavi-txt.webp" className="h-[1.75rem]" alt="Rucavi" />
                 </Navbar.Brand>
                 <Navbar.Toggle />
                 <Navbar.Collapse>
