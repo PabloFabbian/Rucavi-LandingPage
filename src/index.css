@@ -205,3 +205,29 @@
   transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
 }
+
+.popupContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popupContent {
+  background: rgba(251, 213, 255, 0.808);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-inline: 0.5rem;
+}
+
+.no-scroll {
+  overflow: hidden;
+}

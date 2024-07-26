@@ -6,11 +6,13 @@ import Techstack from './components/Techstack'
 import WhyRucavi from './components/WhyRucavi'
 import Partners from './components/Partners'
 import ContactUs from './components/ContactUs'
+import MobilePopup from './components/MobilePopup'
 
 function App() {
 
   return (
     <>
+      <MobilePopup />
       <Navigation />
       <Hero />
       <About />
