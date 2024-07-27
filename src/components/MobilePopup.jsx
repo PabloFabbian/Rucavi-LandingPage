@@ -34,10 +34,10 @@ const MobilePopup = () => {
         <div className="popupContainer">
             <div className="popupContent border border-2 border-violet-400">
                 <h2 className="pb-2 font-semibold">¡Gracias por elegirnos!</h2>
-                <p>La versión móvil de esta página aún está en desarrollo.</p>
+                <p>La versión Mobile de nuestra página sigue en desarrollo.</p>
                 <p className="pb-3">Por favor, acceda desde un PC de escritorio o una laptop para una mejor experiencia.</p>
                 <button
-                    className="rounded-3xl bg-violet-300 px-4 py-1 border border-2 border-violet-400"
+                    className="rounded-3xl bg-violet-300 px-4 py-1 border border-1 border-violet-400"
                     onClick={() => setShowPopup(false)}
                 >
                     Continuar

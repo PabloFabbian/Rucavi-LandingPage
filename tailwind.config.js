@@ -18,6 +18,7 @@ export default {
       },
       poppins: ['Poppins', 'sans-serif'],
       borderRadius: {
+        '5xl': '12rem',
         '7xl': '16rem', // Ajusta el valor según tus necesidades
       },
     },

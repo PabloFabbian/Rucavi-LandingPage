@@ -35,7 +35,7 @@
 }
 
 .pin-spacer {
-  background: linear-gradient(to bottom, #D4C5FE, #C9B4FF);
+  background: linear-gradient(to right, #C9B4FF, #C9B4FF);
 }
 
 #TechStack {
@@ -107,17 +107,17 @@
 }
 
 .fade-in-delay-1 {
-  animation-delay: 1.5s;
+  animation-delay: 1s;
 }
 
 .fade-in-delay-2 {
-  animation-delay: 2s;
+  animation-delay: 1.75s;
 }
 
 .fade-in-button {
   opacity: 0;
   animation: fadeIn 1s forwards;
-  animation-delay: 2.6s;
+  animation-delay: 2.5s;
 }
 
 /*------------------------------------------------*/
@@ -220,7 +220,7 @@
 }
 
 .popupContent {
-  background: rgba(251, 213, 255, 0.808);
+  background: #D6C8FE;
   padding: 20px;
   border-radius: 8px;
   text-align: center;

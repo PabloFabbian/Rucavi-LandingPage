@@ -21,7 +21,7 @@ const tecnologias = [
 
 function Techstack() {
     return (
-        <div className='pb-20 tech-degrade' id='TechStack'>
+        <div className='pb-20 sm:pt-20 tech-degrade' id='TechStack'>
             <section className='flex flex-nowrap gap-0 mx-16'>
                 <div className="folder w-1/2 rounded-t-3xl pt-16 pb-10 bg-[#EBE5FF] text-left text-5xl font-[650] px-40 tracking-wide leading-12">
                     Tecnologías con las que trabajamos
