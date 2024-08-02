@@ -115,14 +115,14 @@ function About() {
                         <h2 className="text-base md:text-2xl font-semibold text-violet-500 mb-4 sm:mb-8">[La unión de un grupo]</h2>
                         <p className="mb-4 text-xs md:text-xl">
                             RUCAVI tiene sus raíces en la unión de un
-                            <span className="font-bold text-[#7D51FE]"> grupo de amigos que comparten una pasión por la tecnología.</span>
+                            <span className="font-bold text-[#7D51FE]"> grupo de amigos que comparten una pasión por la tecnología. </span>
                             Lo que comenzó como una idea entre compañeros se convirtió en una empresa dedicada a ofrecer soluciones tecnológicas confiables y efectivas.
                         </p>
                         <p className="mb-4 text-xs md:text-xl">Nuestro equipo, formado por profesionales comprometidos, combina la experiencia y el conocimiento para abordar los desafíos de nuestros clientes con confianza y diligencia.</p>
                         <p className="mb-4 text-xs md:text-xl">En RUCAVI nos enorgullece contar con un equipo que prioriza la satisfacción del cliente y la excelencia en cada proyecto que emprendemos.</p>
                     </div>
                     <SmallButton>EQUIPO</SmallButton>
-                    <img src={VioletArrowIcon} className="absolute -left-[6rem] md:left-[30rem] top-[22.5rem] md:top-[38.25rem] h-12 w-12" />
+                    <img src={VioletArrowIcon} className="absolute -left-[6rem] md:left-[31.5rem] top-[22.5rem] md:top-[38.25rem] h-12 w-12" />
                 </section>
                 <section className="sections py-4 px-5 sm:px-0 mx-0 sm:mx-0 min-w-[100vw] md:min-w-[35rem]" ref={(el) => (sectionsRef.current[2] = el)}>
                     <h1 className="text-3xl md:text-5xl text-indigo-600 font-bold -ml-4 sm:ml-0 -mb-5 sm:mb-5 whitespace-nowrap">¿Qué es lo que hacemos?</h1>

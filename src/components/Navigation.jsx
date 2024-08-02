@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Navbar } from "flowbite-react";
 import useScrollDirection from '../hooks/useScrollDirection';
+import RucaviLogo from '../assets/Rucavi-logo.webp';
+import RucaviText from '../assets/Rucavi-txt.webp'
 
 function Navigation() {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -45,8 +47,8 @@ function Navigation() {
                         onClick={(e) => handleSmoothScroll(e, '#Home')}
                         className={`ml-2 sm:ml-8 transform transition-transform duration-1000 hover:cursor-pointer ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-80'}`}
                     >
-                        <img src="./src/assets/Rucavi-logo.webp" className="h-11 mr-6" alt="Rucavi Logo" />
-                        <img src="./src/assets/Rucavi-txt.webp" className="h-[1.75rem]" alt="Rucavi" />
+                        <img src={RucaviLogo} className="h-11 mr-6" alt="Rucavi Logo" />
+                        <img src={RucaviText} className="h-[1.75rem]" alt="Rucavi" />
                     </Navbar.Brand>
                     <Navbar.Toggle className="hover:bg-transparent text-gray-700 mt-1" onClick={toggleOverlay} />
                     <Navbar.Collapse className="hidden md:flex">
@@ -77,8 +79,8 @@ function Navigation() {
             {/* Overlay for mobile */}
             <div className={`fixed inset-0 bg-[#EBE5FF] z-50 transform ${isOverlayOpen ? 'translate-y-0' : '-translate-y-full'} transition-transform duration-300 ease-in-out md:hidden flex flex-col items-center justify-center`}>
                 <div onClick={(e) => handleSmoothScroll(e, '#Home')} className='flex flex-nowrap items-center justify-center mt-5 -ml-32'>
-                    <img src="./src/assets/Rucavi-logo.webp" className="h-11 mr-6" alt="Rucavi Logo" />
-                    <img src="./src/assets/Rucavi-txt.webp" className="h-[1.75rem]" alt="Rucavi" />
+                    <img src={RucaviLogo} className="h-11 mr-6" alt="Rucavi Logo" />
+                    <img src={RucaviText} className="h-[1.75rem]" alt="Rucavi" />
                 </div>
 
                 <div className="h-full bg-[#EBE5FF] flex flex-col items-left space-y-6 mt-14 -ml-2">

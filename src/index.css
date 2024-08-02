@@ -191,19 +191,12 @@
 }
 
 .partner-logo {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: transform 1.2s ease-out, opacity 1.2s ease-out;
-}
-
-.partner-logo.fade-in {
-  opacity: 1;
-  transform: translateY(0);
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .partner-logo:hover {
-  transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
-  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px white);
 }
 
 .popupContainer {

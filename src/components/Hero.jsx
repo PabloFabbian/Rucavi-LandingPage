@@ -1,4 +1,5 @@
 import React from 'react';
+import GrayBackground from '../assets/gray-bg4.webp';
 
 function Hero() {
     const handleSmoothScroll = (event, targetId) => {
@@ -16,7 +17,7 @@ function Hero() {
         <div className='px-3 sm:px-8 pt-[4.8rem] sm:pt-[4.8rem] pb-4 hero-degrade' id='Home'>
             <div className="relative h-screen sm:h-screen z-20">
                 <img
-                    src="src/assets/Gray-bg4.webp"
+                    src={GrayBackground}
                     className="absolute top-0 left-0 w-[100%] h-[86%] sm:h-[90%] object-cover
                     rounded-tr-xl sm:rounded-tr-3xl rounded-tl-xl sm:rounded-tl-3xl rounded-bl-xl sm:rounded-bl-3xl rounded-br-5xl sm:rounded-br-7xl"
                     alt="Gray Background"
