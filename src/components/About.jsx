@@ -54,7 +54,7 @@ function About() {
             const additionalScroll = 2; // Adjust this value to increase the scroll distance
 
             gsap.to(sections, {
-                xPercent: -80 * (sections.length - 1),
+                xPercent: -70 * (sections.length - 1),
                 ease: 'none',
                 scrollTrigger: {
                     trigger: container,
@@ -65,7 +65,7 @@ function About() {
             });
 
             gsap.to(lineRef.current, {
-                xPercent: -19 * (sections.length - 1),
+                xPercent: -17.01 * (sections.length - 1),
                 ease: 'none',
                 scrollTrigger: {
                     trigger: container,
@@ -87,7 +87,7 @@ function About() {
 
     return (
         <div className="about-degrade overflow-hidden relative sm:pt-[60px] pl-1 sm:pl-14 z-10 -mt-32 sm:-mt-20" id="AboutUs" ref={containerRef}>
-            <div ref={lineRef} className="sticky top-[10.9rem] sm:top-[10.5rem] left-0 w-[calc(21.5rem*3)] sm:w-[calc(47.7rem*3)] h-0.5 bg-gray-500 ml-6 sm:ml-44"></div>
+            <div ref={lineRef} className="sticky top-[10.9rem] sm:top-[10.5rem] left-0 w-[calc(21.5rem*3)] sm:w-[calc(48.5rem*3)] h-0.5 bg-gray-500 ml-6 sm:ml-44"></div>
 
             <div className="flex py-28 sm:py-20 sm:px-44 w-full space-x-4 sm:space-x-80">
                 <section className="sections py-4 px-5 sm:px-0 mx-0 sm:mx-0 min-w-[100vw] md:min-w-[35rem]" ref={(el) => (sectionsRef.current[0] = el)}>

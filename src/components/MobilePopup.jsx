@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 
 const MobilePopup = () => {
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 820);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 1780);
     const [showPopup, setShowPopup] = useState(isMobile);
 
     useEffect(() => {
         const handleResize = () => {
-            const isMobileDevice = window.innerWidth < 820;
+            const isMobileDevice = window.innerWidth < 1780;
             setIsMobile(isMobileDevice);
             setShowPopup(isMobileDevice);
         };
@@ -34,7 +34,7 @@ const MobilePopup = () => {
         <div className="popupContainer">
             <div className="popupContent border border-2 border-violet-400">
                 <h2 className="pb-2 font-semibold">¡Gracias por elegirnos!</h2>
-                <p>La versión Mobile de nuestra página sigue en desarrollo.</p>
+                <p>La versión para dispositivos móviles de nuestra página sigue en desarrollo.</p>
                 <p className="pb-3">Por favor, acceda desde un PC de escritorio o una laptop para una mejor experiencia.</p>
                 <button
                     className="rounded-3xl bg-violet-300 px-4 py-1 border border-1 border-violet-400"

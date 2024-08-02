@@ -29,7 +29,7 @@ const ContactUs = () => {
                 import.meta.env.VITE_EMAILJS_SERVICE_ID,
                 import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
                 e.target,
-                import.meta.env.VITE_EMAILJS_USER_ID
+                import.meta.env.VITE_EMAILJS_PUBLIC_KEY
             );
 
             console.log('EmailJS success:', response.text);

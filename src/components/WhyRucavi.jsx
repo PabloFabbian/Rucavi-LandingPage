@@ -7,7 +7,7 @@ const whatsappNumberVisual = import.meta.env.VITE_WHATSAPP_NUMBER_VISUAL;
 const whatsappUrl = `https://wa.me/${whatsappNumber}`;
 
 const emailDir = import.meta.env.VITE_EMAIL_DIRECTION;
-const emailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailDir}`;
+const emailUrl = `mailto:${emailDir}`;
 
 const LinkedinUrl = import.meta.env.VITE_LINKEDIN_DIRECTION;
 const InstagramUrl = import.meta.env.VITE_INSTAGRAM_DIRECTION;
@@ -25,7 +25,7 @@ const WhyRucavi = () => {
                             <span className="inline-block text-gray-900 z-20">RUCAVI</span>
                         </span>
                     </h1>
-                    <div className="relative inline-block z-10 -mt-[9.3rem]">
+                    <div className="relative inline-block z-10 -mt-[10.2rem]">
                         <img src={LaptopByN} alt="Rounded" className="w-full h-full rounded-3xl object-cover -ml-12" />
                         <p className="absolute inset-0 flex items-end justify-left text-gray-900 pl-16 pb-36 text-lg tracking-wider">Estamos recibiendo cvs.</p>
                     </div>
