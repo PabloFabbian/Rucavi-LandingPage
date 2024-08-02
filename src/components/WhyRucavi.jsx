@@ -42,10 +42,17 @@ const WhyRucavi = () => {
                             Mandanos tu CV a <span className="font-semibold text-[#464452]">contacto@rucavi.com</span> y unite a nosotros en este viaje. </p>
                     </div>
                     <button
-                        className='bg-transparent rounded-full outline outline-1 outline-violet-200 hover:bg-violet-200
-                        text-indigo-600 text-[1.6rem] font- mt-12 pt-0.5 pb-1 w-44 transition-colors duration-200 ease-in-out'>
+                        type="button"
+                        onClick={() => {
+                            const element = document.getElementById('ContactUs');
+                            if (element) {
+                                element.scrollIntoView({ behavior: 'smooth' });
+                            }
+                        }}
+                        className='bg-transparent rounded-full outline outline-1 outline-violet-200 hover:bg-violet-200 text-indigo-600 text-[1.6rem] font-[450] mt-12 pt-0.5 pb-1 w-44 transition-colors duration-200 ease-in-out'>
                         Email
                     </button>
+
                 </div>
             </div>
 
