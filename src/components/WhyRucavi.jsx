@@ -61,7 +61,7 @@ const WhyRucavi = () => {
                     <span className="w-2 h-2 bg-gray-300 rounded-full inline-block mt-1.5 mr-[75px] -ml-1"></span>
                     Contacto
                 </h2>
-                <ul className="flex flex-nowrap list-none text-left mx-4 text-xl text-purple-600 leading-9 px-16 justify-between">
+                <ul className="flex flex-wrap md:flex-nowrap list-none text-left mx-4 text-xl text-purple-600 leading-9 px-16 justify-between">
                     <li><a href={LinkedinUrl} target="_blank" rel="noopener noreferrer" className='hover:text-purple-800'>Linkedin</a></li>
                     <li><a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className='hover:text-purple-800'>{whatsappNumberVisual}</a></li>
                     <li><a href={emailUrl} target="_blank" rel="noopener noreferrer" className='font-semibold hover:text-purple-800'>{emailDir}</a></li>

@@ -2,13 +2,32 @@ import React, { useEffect, useState } from "react";
 
 const MobilePopup = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 1780);
-    const [showPopup, setShowPopup] = useState(isMobile);
+    const [showPopup, setShowPopup] = useState(false);
+
+    useEffect(() => {
+        const sessionKey = 'popupSessionKey';
+        const currentSessionKey = performance.now().toString();
+        const savedSessionKey = sessionStorage.getItem(sessionKey);
+
+        const isMobileDevice = window.innerWidth < 1780;
+        setIsMobile(isMobileDevice);
+
+        if (isMobileDevice && (!savedSessionKey || savedSessionKey !== currentSessionKey)) {
+            setShowPopup(true);
+            sessionStorage.setItem(sessionKey, currentSessionKey);
+        }
+    }, []);
 
     useEffect(() => {
         const handleResize = () => {
             const isMobileDevice = window.innerWidth < 1780;
             setIsMobile(isMobileDevice);
-            setShowPopup(isMobileDevice);
+
+            if (isMobileDevice && !sessionStorage.getItem('popupShown')) {
+                setShowPopup(true);
+            } else {
+                setShowPopup(false);
+            }
         };
 
         window.addEventListener("resize", handleResize);
@@ -18,11 +37,11 @@ const MobilePopup = () => {
     useEffect(() => {
         if (showPopup) {
             document.body.classList.add("no-scroll");
+            sessionStorage.setItem("popupShown", "true");
         } else {
             document.body.classList.remove("no-scroll");
         }
 
-        // Limpia la clase al desmontar el componente
         return () => {
             document.body.classList.remove("no-scroll");
         };

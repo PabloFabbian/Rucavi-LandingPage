@@ -127,6 +127,7 @@
   width: 100%;
   overflow: hidden;
   max-width: 1800px;
+  /* Puedes ajustar esto según el diseño general */
   margin: 0 auto;
 }
 
@@ -134,14 +135,19 @@
   display: flex;
   width: max-content;
   animation: scroll 55s linear infinite;
+  /* Asegúrate de definir esta animación */
 }
 
 .carousel-item {
   display: flex;
   align-items: center;
+  flex: 0 0 auto;
+  /* Esto asegura que los elementos no se estiren */
   width: auto;
+  /* Ajustar según el diseño */
   padding: 0;
   margin-inline: 14px;
+  /* Espaciado entre elementos del carrusel */
 }
 
 .carousel-logo {
@@ -157,6 +163,37 @@
 
 .carousel-text .block {
   display: block;
+}
+
+@media (max-width: 768px) {
+  .carousel-wrapper {
+    max-width: 100%;
+  }
+
+  .carousel-item {
+    align-items: center;
+    text-align: left;
+    margin-inline: 10px;
+  }
+
+  .carousel-logo {
+    margin: 0;
+    height: 2.7rem;
+    width: 2.7rem;
+    /* Ajustar la altura y el ancho para mantener la proporción */
+  }
+
+  .carousel-text {
+    padding: 0 10px;
+  }
+
+  .folder {
+    padding: 10px;
+  }
+
+  .folder-degrade {
+    background: transparent
+  }
 }
 
 @keyframes scroll {
@@ -176,7 +213,7 @@
   }
 
   .carousel {
-    animation: scroll-small 60s linear infinite;
+    animation: scroll-small 45s linear infinite;
   }
 
   @keyframes scroll-small {

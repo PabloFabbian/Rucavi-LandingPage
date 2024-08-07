@@ -79,7 +79,7 @@ function About() {
 
     const SmallButton = ({ children }) => {
         return (
-            <button className="bg-purple-200 text-indigo-600 font-semibold rounded-2xl mt-10 sm:mt-20 px-4 py-2 hover:bg-purple-300 transition-colors duration-300 ease-in-out text-xs md:text-base">
+            <button className="bg-purple-200 text-indigo-600 font-semibold rounded-2xl mt-10 sm:mt-20 px-4 py-2 hover:bg-purple-300 hover:cursor-default transition-colors duration-300 ease-in-out text-xs md:text-base">
                 {children}
             </button>
         );

@@ -49,7 +49,7 @@ const ContactUs = () => {
         <div className='contactus-degrade pt-6' id='ContactUs'>
             <form onSubmit={handleSubmit} className="flex flex-col md:flex-row items-top justify-center px-28 pb-24">
                 <div className="w-full md:w-1/2 p-4 mr-40">
-                    <h1 className="text-[#EBE5FF] font-bold text-7xl">Contactanos</h1>
+                    <h1 className="text-[#EBE5FF] font-bold text-6xl md:text-7xl">Contactanos</h1>
                     <div className="mt-6">
                         <input
                             type="text"
