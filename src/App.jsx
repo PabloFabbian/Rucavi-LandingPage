@@ -11,7 +11,7 @@ import MobilePopup from './components/MobilePopup'
 function App() {
 
   return (
-    <>
+    <div className="backgroundGradient">
       <MobilePopup />
       <Navigation />
       <Hero />
@@ -20,7 +20,7 @@ function App() {
       <WhyRucavi />
       <Partners />
       <ContactUs />
-    </>
+    </div>
   )
 }
 

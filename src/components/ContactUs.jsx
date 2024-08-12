@@ -47,7 +47,7 @@ const ContactUs = () => {
 
     return (
         <div className='contactus-degrade pt-6' id='ContactUs'>
-            <form onSubmit={handleSubmit} className="flex flex-col md:flex-row items-top justify-center px-28 pb-24">
+            <form onSubmit={handleSubmit} className="flex flex-col md:flex-row items-top justify-center px-2 md:px-28 pb-24">
                 <div className="w-full md:w-1/2 p-4 mr-40">
                     <h1 className="text-[#EBE5FF] font-bold text-6xl md:text-7xl">Contactanos</h1>
                     <div className="mt-6">
@@ -116,7 +116,7 @@ const ContactUs = () => {
                     </button>
                 </div>
             </form>
-            <hr className="border-[#EBE6FD] mx-32 mt-20" />
+            <hr className="border-[#EBE6FD] mx-2 md:mx-32 mt-20" />
             <div className='pt-8 pb-10 pl-[20.4rem]'>
                 <img src={Rucavi} alt="Rucavi" className="w-full h-8" />
             </div>

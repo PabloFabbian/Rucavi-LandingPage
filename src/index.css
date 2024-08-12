@@ -4,17 +4,17 @@
 
 /* Para navegadores Webkit (Chrome, Safari, etc.) */
 ::-webkit-scrollbar {
-  background-color: #c4acd8be;
+  background-color: #d1c4e9;
   width: 13px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #c4acd8;
+  background-color: #8464c02a;
   border-radius: 999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #52495560;
+  background-color: #8a2fa83f;
 }
 
 /*------------------------------------------------*/
@@ -32,10 +32,6 @@
 
 .nav-li:hover {
   color: #8c00ff !important;
-}
-
-.pin-spacer {
-  background: linear-gradient(to right, #C9B4FF, #C9B4FF);
 }
 
 #TechStack {
@@ -59,32 +55,16 @@
   backdrop-filter: blur(5.25px);
 }
 
-.hero-degrade {
-  background: linear-gradient(to bottom, #DCD0FE, #D4C5FE);
+.pin-spacer {
+  background: linear-gradient(to bottom, #D8CAFE, #C0A9FF);
 }
 
-.about-degrade {
-  background: linear-gradient(to bottom, #D4C5FE, #C9B4FF);
+.folderGradient {
+  background: linear-gradient(to bottom, #BFA9FF, #C2ACFF);
 }
 
-.tech-degrade {
-  background: linear-gradient(to bottom, #C9B4FF, #BDA6FF);
-}
-
-.folder-degrade {
-  background: linear-gradient(to bottom, #C9B4FF, #C4AEFF);
-}
-
-.why-degrade {
-  background: linear-gradient(to bottom, #BDA6FF, #A98CFF);
-}
-
-.partners-degrade {
-  background: linear-gradient(to bottom, #A98CFF, #A282FE);
-}
-
-.contactus-degrade {
-  background: linear-gradient(to bottom, #A282FF, #7E52FF);
+.backgroundGradient {
+  background: linear-gradient(to bottom, #DDD1FF, #DCD0FE, #D4C5FE, #C9B4FF, #BDA6FF, #C4AEFF, #A98CFF, #A282FE, #7E52FF);
 }
 
 /*------------------------------------------------*/
@@ -127,7 +107,6 @@
   width: 100%;
   overflow: hidden;
   max-width: 1800px;
-  /* Puedes ajustar esto según el diseño general */
   margin: 0 auto;
 }
 
@@ -135,19 +114,15 @@
   display: flex;
   width: max-content;
   animation: scroll 55s linear infinite;
-  /* Asegúrate de definir esta animación */
 }
 
 .carousel-item {
   display: flex;
   align-items: center;
   flex: 0 0 auto;
-  /* Esto asegura que los elementos no se estiren */
   width: auto;
-  /* Ajustar según el diseño */
   padding: 0;
   margin-inline: 14px;
-  /* Espaciado entre elementos del carrusel */
 }
 
 .carousel-logo {
@@ -166,6 +141,10 @@
 }
 
 @media (max-width: 768px) {
+  .pin-spacer {
+    background: linear-gradient(to bottom, #DCD0FE, #CAB5FF);
+  }
+
   .carousel-wrapper {
     max-width: 100%;
   }
@@ -180,19 +159,14 @@
     margin: 0;
     height: 2.7rem;
     width: 2.7rem;
-    /* Ajustar la altura y el ancho para mantener la proporción */
   }
 
   .carousel-text {
     padding: 0 10px;
   }
 
-  .folder {
-    padding: 10px;
-  }
-
-  .folder-degrade {
-    background: transparent
+  .folderGradient {
+    background: transparent;
   }
 }
 
