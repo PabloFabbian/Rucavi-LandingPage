@@ -190,6 +190,11 @@
     animation: scroll-small 45s linear infinite;
   }
 
+  .partner-logo {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 4px white);
+  }
+
   @keyframes scroll-small {
     0% {
       transform: translateX(0);
