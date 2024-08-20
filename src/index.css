@@ -46,6 +46,10 @@
   scroll-margin-top: 260px;
 }
 
+.backgroundGradient {
+  background: linear-gradient(to bottom, #DDD1FF, #DCD0FE, #D4C5FE, #C9B4FF, #BDA6FF, #C4AEFF, #A98CFF, #A282FE, #7E52FF);
+}
+
 .navbar-degrade1 {
   background: linear-gradient(to bottom, #DDD1FF, #DCD0FE);
 }
@@ -63,9 +67,6 @@
   background: linear-gradient(to bottom, #BFA9FF, #C2ACFF);
 }
 
-.backgroundGradient {
-  background: linear-gradient(to bottom, #DDD1FF, #DCD0FE, #D4C5FE, #C9B4FF, #BDA6FF, #C4AEFF, #A98CFF, #A282FE, #7E52FF);
-}
 
 /*------------------------------------------------*/
 
@@ -141,8 +142,26 @@
 }
 
 @media (max-width: 768px) {
+  .backgroundGradient {
+    background: linear-gradient(to bottom, #EBE5FF, #CDBDFE, #C5B0FF, #BDA6FF, #A586FE, #7F53FF);
+  }
+
+  .navbar-degrade1 {
+    background: linear-gradient(to bottom, #DDD1FF, #EBE5FF);
+  }
+
+  .navbar-degrade2 {
+    background: linear-gradient(to bottom, #ddd1ffa4, #d1c3f8b0);
+    backdrop-filter: blur(5.25px);
+  }
+
+  .folderGradient {
+    background: transparent;
+  }
+
   .pin-spacer {
-    background: linear-gradient(to bottom, #DCD0FE, #CAB5FF);
+    background: linear-gradient(to bottom, #CEBEFF, #C0A9FF);
+    padding-bottom: 1px !important;
   }
 
   .carousel-wrapper {
@@ -164,10 +183,6 @@
   .carousel-text {
     padding: 0 10px;
   }
-
-  .folderGradient {
-    background: transparent;
-  }
 }
 
 @keyframes scroll {
@@ -182,10 +197,6 @@
 
 /* Ajustes adicionales para pantallas más pequeñas */
 @media (max-width: 768px) {
-  .navbar-degrade1 {
-    background: linear-gradient(to bottom, #EAE4FE, #DCD0FE);
-  }
-
   .carousel {
     animation: scroll-small 45s linear infinite;
   }

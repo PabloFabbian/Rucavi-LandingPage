@@ -79,17 +79,17 @@ function About() {
 
     const SmallButton = ({ children }) => {
         return (
-            <button className="bg-purple-200 text-indigo-600 font-semibold rounded-2xl mt-10 sm:mt-20 px-4 py-2 hover:bg-purple-300 hover:cursor-default transition-colors duration-300 ease-in-out text-xs md:text-base">
+            <button className="bg-purple-200 text-indigo-600 font-semibold rounded-2xl mt-10 sm:mt-20 px-4 pb-1 pt-1.5 hover:bg-purple-300 hover:cursor-default transition-colors duration-300 ease-in-out text-xs md:text-base">
                 {children}
             </button>
         );
     };
 
     return (
-        <div className="about-degrade overflow-hidden relative sm:pt-[60px] pl-1 sm:pl-14 z-10 -mt-32 sm:-mt-20" id="AboutUs" ref={containerRef}>
-            <div ref={lineRef} className="sticky top-[10.9rem] sm:top-[10.5rem] left-0 w-[calc(21.5rem*3)] sm:w-[calc(48.5rem*3)] h-0.5 bg-gray-500 ml-6 sm:ml-44"></div>
+        <div className="overflow-hidden relative sm:pt-[60px] pl-1 sm:pl-14 z-10 -mt-32 sm:-mt-20" id="AboutUs" ref={containerRef}>
+            <div ref={lineRef} className="sticky top-[6.9rem] sm:top-[10.5rem] left-0 w-[calc(21.5rem*3)] sm:w-[calc(48.5rem*3)] h-0.5 bg-gray-500 ml-6 sm:ml-44"></div>
 
-            <div className="flex py-28 sm:py-20 sm:px-44 w-full space-x-4 sm:space-x-80">
+            <div className="flex pt-12 pb-10 sm:py-20 sm:px-44 w-full space-x-4 sm:space-x-80">
                 <section className="sections py-4 px-5 sm:px-0 mx-0 sm:mx-0 min-w-[100vw] md:min-w-[35rem]" ref={(el) => (sectionsRef.current[0] = el)}>
                     <h1 className="text-3xl md:text-5xl text-indigo-600 font-bold -mb-5 sm:mb-5">Sobre Nosotros</h1>
                     <div className="text-[#9471FF] mt-12">
@@ -125,7 +125,7 @@ function About() {
                     <img src={VioletArrowIcon} className="absolute -left-[6rem] md:left-[31.5rem] top-[22.5rem] md:top-[38.25rem] h-12 w-12" />
                 </section>
                 <section className="sections py-4 px-5 sm:px-0 mx-0 sm:mx-0 min-w-[100vw] md:min-w-[35rem]" ref={(el) => (sectionsRef.current[2] = el)}>
-                    <h1 className="text-3xl md:text-5xl text-indigo-600 font-bold -ml-4 sm:ml-0 -mb-5 sm:mb-5 whitespace-nowrap">¿Qué es lo que hacemos?</h1>
+                    <h1 className="text-3xl md:text-5xl text-indigo-600 font-bold -ml-0 sm:ml-0 -mb-5 sm:mb-5 whitespace-nowrap">¿Qué es lo que hacemos?</h1>
                     <div className="text-[#9471FF] mt-12 sm:mb-12">
                         <img src={WhiteArrowIcon} className="absolute left-1 md:-left-10 top-[5.4rem] md:top-[7.6rem] h-3 w-3 sm:h-5 sm:w-5" />
                         <h2 className="text-base md:text-2xl font-semibold text-violet-500 mb-4 sm:mb-8">[Desarrollo de soluciones tecnológicas]</h2>

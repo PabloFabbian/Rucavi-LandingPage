@@ -30,11 +30,15 @@ const WhyRucavi = () => {
                         <p className="text-sm md:text-xl absolute inset-0 flex items-end justify-left text-gray-900 pl-8 md:pl-[4.6rem] pb-14 md:pb-32 text-lg tracking-wider">Estamos recibiendo cvs.</p>
                     </div>
                 </div>
-                <div className="flex-1 relative md:mt-5">
-                    <h3 className="inline text-[1rem] md:text-[1.975rem] font-semibold mb-2 text-[#7C50FF] pt-4 ml-7 md:ml-0">¿Por qué sumarte a la comunidad de RUCAVI?</h3>
-                    <hr className="border-[#1D1D1B] mt-2 md:mt-9 w-11/12 md:w-5/6 mx-4" />
-                    <div className="mb-4 text-[0.9rem] md:text-[1.65rem] text-[#EAE4FE] font-[350] leading-[1.05] mt-6 md:mt-8 px-4 md:pr-24">
-                        <img src={WhiteArrowIcon} className="absolute left-[-2.8rem] top-[7.65rem] h-6 w-6" />
+                <div className="flex-1 relative -mt-8 md:mt-5">
+                    <div className="flex justify-end">
+                        <h3 className="text-[1rem] md:text-[1.975rem] font-semibold md:-mb-4 mb-0 text-[#7C50FF] pt-4 mr-3 md:mr-[11.2rem]">
+                            ¿Por qué sumarte a la comunidad de RUCAVI?
+                        </h3>
+                    </div>
+                    <hr className="border-[#1D1D1B] mt-2 md:mt-9 w-[87.66667%] md:w-[85.333333%] ml-8 mr-2" />
+                    <div className="mb-4 text-[0.7  rem] md:text-[1.65rem] text-[#EAE4FE] font-[350] leading-[1.05] mt-6 md:mt-8 px-4 md:pr-24 pl-8">
+                        <img src={WhiteArrowIcon} className="absolute left-[0.6rem] top-[4.65rem] h-3 w-3" />
                         <p>En RUCAVI, estamos constantemente buscando mentes brillantes y apasionadas por la tecnología para unirse a nuestro equipo.
                             <br /><br />
                             Si te apasiona la innovación y queres enfrentar nuevos desafíos ¡Nos encantaría conocerte!
@@ -49,13 +53,13 @@ const WhyRucavi = () => {
                                 element.scrollIntoView({ behavior: 'smooth' });
                             }
                         }}
-                        className='bg-transparent rounded-full outline outline-1 outline-violet-200 hover:bg-violet-200 text-[#5B24FD] text-[1.2rem] md:text-[1.6rem] font-[450] ml-4 md:ml-4 mt-4 md:mt-[4.6rem] pt-0 md:pt-0.5 pb-0.5 md:pb-1 w-20 md:w-44 transition-colors duration-200 ease-in-out'>
+                        className='bg-transparent rounded-full outline outline-1 outline-violet-200 hover:bg-violet-200 text-[#5B24FD] text-[1.2rem] md:text-[1.6rem] font-[400] ml-8 md:ml-4 mt-4 md:mt-[4.6rem] py-1 md:pt-0.5 md:pb-1 w-20 md:w-44 transition-colors duration-200 ease-in-out'>
                         Email
                     </button>
                 </div>
             </div>
 
-            <div className='mt-12 md:mt-0'>
+            <div className='mt-12 md:mt-0 ml-4'>
                 <h2 className="text-base md:text-2xl mb-0 md:mb-4 flex items-center text-[#474550] font-bold ml-1 md:ml-7">
                     <span className="w-1 h-1 md:w-2 md:h-2 bg-gray-100 rounded-full inline-block mr-[16px] md:mr-[75px]"></span>
                     Contacto
@@ -68,9 +72,9 @@ const WhyRucavi = () => {
                 </ul>
             </div>
 
-            <hr className="mt-0 md:mt-10 mb-3 md:mb-6 mx-[1.4rem] md:mx-[7rem] border-[#E9E5FE]" />
+            <hr className="mt-0 md:mt-10 mb-3 md:mb-6 ml-[2.5rem] mr-[1.4rem] md:mx-[7rem] border-[#E9E5FE]" />
 
-            <h5 className="text-base md:text-xl text-gray-800 font-semibold justify-start text-left ml-5 md:ml-[6.8rem]">¡Unite al equipo!</h5>
+            <h5 className="text-base md:text-xl text-gray-800 font-semibold justify-start text-left ml-10 md:ml-[6.8rem]">¡Unite al equipo!</h5>
         </div>
     );
 };
