@@ -25,13 +25,12 @@ function Techstack() {
             <section className="flex flex-wrap gap-0 sm:mx-8 px-auto mx-4">
                 <div className="flex flex-wrap w-full sm:w-1/2 rounded-t-3xl pt-6 sm:pt-16 bg-[#EBE5FF] px-2 sm:px-40">
                     <p className="text-[1.6rem] sm:text-5xl font-[650] tracking-normal md:tracking-wide leading-8 sm:leading-12 px-6 md:px-0">
-                        Tecnologías con las que
+                        Tecnologías con las que trabajamos
                     </p>
-                    <span className="text-[1.6rem] sm:text-5xl font-[650] tracking-normal md:tracking-wide leading-8 sm:leading-12 px-6 md:px-0 text-left">trabajamos</span>
                 </div>
                 <div className='bg-[#EBE5FF] w-full sm:w-1/2 flex items-start justify-center'>
                     <div className="folderGradient w-full h-full flex items-center justify-start md:justify-center rounded-bl-3xl bg-[#C8B3FF] bg-clip-border border border-[#EBE5FF] md:border-none">
-                        <p className="font-semibold text-base sm:text-2xl text-center text-purple-500 tracking-wide px-7 py-2 md:px-0">
+                        <p className="font-semibold text-sm sm: md:text-2xl text-center text-purple-500 tracking-wide px-7 py-2 md:px-0">
                             ¿Buscas soluciones de alto impacto?
                         </p>
                     </div>

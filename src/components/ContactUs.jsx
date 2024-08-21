@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import Rucavi from '../assets/Rucavi-white-txt.svg';
 
 const ContactUs = () => {
     const [formData, setFormData] = useState({
@@ -85,32 +84,34 @@ const ContactUs = () => {
                         required
                     ></textarea>
 
-                    <button
-                        type="submit"
-                        className={`flex justify-end bg-[#EBE5FF] font-medium text-[#5C23FE] text-xl sm:text-2xl px-5 pb-1 pt-0.5 rounded-3xl hover:cursor-pointer mt-6 w-min ml-0 
-                ${loading ? 'cursor-wait' : 'hover:bg-[#D1C9FF] hover:text-[#3C0FD8]'} 
-                ${submitted ? 'cursor-default' : ''}`}
-                        disabled={loading || submitted}
-                    >
-                        {loading ? (
-                            <div className="flex items-center justify-center">
-                                Cargando...
-                                <svg className="animate-spin h-5 w-5 ml-3 -mr-2 mt-1 text-violet-500 " viewBox="0 0 24 24">
-                                    <circle cx="12" cy="12" r="10" stroke="currentColor" fill="none" />
-                                    <path fill="currentColor" d="M4 12a8 8 0 0116 0h2a10 10 0 10-20 0h2z" />
-                                </svg>
-                            </div>
-                        ) : submitted ? (
-                            <div className="flex items-center justify-center">
-                                ¡Enviado!
-                                <svg className="h-6 w-6 ml-3 -mr-2 mt-1 text-green-400 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                            </div>
-                        ) : (
-                            'Enviar'
-                        )}
-                    </button>
+                    <div className="flex justify-end mt-6">
+                        <button
+                            type="submit"
+                            className={`bg-[#EBE5FF] font-medium text-[#5C23FE] text-xl sm:text-2xl px-5 pb-1 pt-0.5 rounded-3xl hover:cursor-pointer w-auto
+                    ${loading ? 'cursor-wait' : 'hover:bg-[#D1C9FF] hover:text-[#3C0FD8]'} 
+                    ${submitted ? 'cursor-default' : ''}`}
+                            disabled={loading || submitted}
+                        >
+                            {loading ? (
+                                <div className="flex items-center justify-center">
+                                    Cargando...
+                                    <svg className="animate-spin h-5 w-5 ml-3 -mr-2 mt-1 text-violet-500 " viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" fill="none" />
+                                        <path fill="currentColor" d="M4 12a8 8 0 0116 0h2a10 10 0 10-20 0h2z" />
+                                    </svg>
+                                </div>
+                            ) : submitted ? (
+                                <div className="flex items-center justify-center">
+                                    ¡Enviado!
+                                    <svg className="h-6 w-6 ml-3 -mr-2 mt-1 text-green-400 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                            ) : (
+                                'Enviar'
+                            )}
+                        </button>
+                    </div>
                 </div>
 
                 {/* Formato para escritorio */}
@@ -141,7 +142,7 @@ const ContactUs = () => {
                     </div>
                 </div>
                 <div className="hidden lg:block w-full md:w-1/2 p-4 flex flex-col">
-                    <h2 className="text-[#5C24FF] font-semibold text-3xl pl-12 mt-9 mb-[3.1rem]">Formulario de contacto.</h2>
+                    <h2 className="text-[#5C24FF] font-semibold text-3xl pl-12 mt-0 mb-[3.1rem]">Formulario de contacto.</h2>
                     <div className="mt-6">
                         <input
                             type="email"
@@ -150,13 +151,13 @@ const ContactUs = () => {
                             placeholder="Email"
                             value={formData.email}
                             onChange={handleChange}
-                            className="w-full p-2.5 rounded-3xl bg-[#9F7EFF] text-white border-[#C6B4FE] outline-white placeholder-[#1D1C24] text-xl pl-12 pb-2.5 font-thin -mt-0.5"
+                            className="w-full p-2.5 rounded-3xl bg-[#9F7EFF] text-white border-[#C6B4FE] outline-white placeholder-[#1D1C24] text-xl pl-12 pb-2.5 font-thin mt-8"
                             required
                         />
                     </div>
                     <button
                         type="submit"
-                        className={`bg-[#EBE5FF] font-medium text-[#5C23FE] text-2xl px-7 pb-1.5 rounded-3xl hover:cursor-pointer mt-[13.3rem] w-min ml-5
+                        className={`bg-[#EBE5FF] font-medium text-[#5C23FE] text-2xl px-10 pb-1.5 rounded-3xl hover:cursor-pointer mt-[13.3rem] w-min ml-2
                 ${loading ? 'cursor-wait' : 'hover:bg-[#D1C9FF] hover:text-[#3C0FD8]'} 
                 ${submitted ? 'cursor-default' : ''}`}
                         disabled={loading || submitted}
@@ -182,10 +183,6 @@ const ContactUs = () => {
                     </button>
                 </div>
             </form>
-            <hr className="border-[#EBE6FD] ml-6 mr-3 md:mx-32 mt-8 md:mt-20" />
-            <div className='pt-3 mb:pt-8 pb-10 pl-6 md:pl-[20.4rem]'>
-                <img src={Rucavi} alt="Rucavi" className="md:w-full h-5 md:h-8" />
-            </div>
         </div>
     );
 };

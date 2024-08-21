@@ -25,21 +25,21 @@ const WhyRucavi = () => {
                             <span className="inline-block text-gray-900 z-20">RUCAVI</span>
                         </span>
                     </h1>
-                    <div className="relative inline-block z-10 -mt-[4.8rem] md:-mt-[6.85rem] flex justify-center items-center h-full">
-                        <img src={LaptopByN} alt="Rounded" className="flex shrink-0 w-full h-full rounded-3xl object-cover ml-5 md:ml-24 scale-100 md:scale-[1.18]" />
+                    <div className="relative inline-block z-10 -mt-[4.55rem] md:-mt-[6.85rem] flex justify-center items-center h-full">
+                        <img src={LaptopByN} alt="Rounded" className="flex shrink-0 w-full h-full rounded-3xl object-cover ml-[1.025rem] md:ml-24 scale-100 md:scale-[1.18]" />
                         <p className="text-sm md:text-xl absolute inset-0 flex items-end justify-left text-gray-900 pl-8 md:pl-[4.6rem] pb-14 md:pb-32 text-lg tracking-wider">Estamos recibiendo cvs.</p>
                     </div>
                 </div>
                 <div className="flex-1 relative -mt-8 md:mt-5">
                     <div className="flex justify-end">
-                        <h3 className="text-[1rem] md:text-[1.975rem] font-semibold md:-mb-4 mb-0 text-[#7C50FF] pt-4 mr-3 md:mr-[11.2rem]">
+                        <h3 className="text-[0.95rem] md:text-[1.975rem] font-semibold md:mb-0.5 mb-0 text-[#7C50FF] pt-4 md:pt-0 mr-3 md:mr-[10.8rem]">
                             ¿Por qué sumarte a la comunidad de RUCAVI?
                         </h3>
                     </div>
-                    <hr className="border-[#1D1D1B] mt-2 md:mt-9 w-[87.66667%] md:w-[85.333333%] ml-8 mr-2" />
-                    <div className="mb-4 text-[0.7  rem] md:text-[1.65rem] text-[#EAE4FE] font-[350] leading-[1.05] mt-6 md:mt-8 px-4 md:pr-24 pl-8">
-                        <img src={WhiteArrowIcon} className="absolute left-[0.6rem] top-[4.65rem] h-3 w-3" />
-                        <p>En RUCAVI, estamos constantemente buscando mentes brillantes y apasionadas por la tecnología para unirse a nuestro equipo.
+                    <hr className="border-[#1D1D1B] mt-2 md:mt-9 w-[89.66667%] md:w-[85.333333%] ml-6 mr-2" />
+                    <div className="mb-4 text-[0.9rem] md:text-[1.65rem] text-[#EAE4FE] font-[350] leading-[1.05] mt-6 md:mt-8 px-4 md:pr-24 pl-8">
+                        <img src={WhiteArrowIcon} className="absolute left-[0.6rem] top-[4.65rem] md:-left-[2.2rem] md:top-[7.6rem] md:h-5 h-3 md:w-5 w-3" />
+                        <p className="text-pretty">En RUCAVI, estamos constantemente buscando mentes brillantes y apasionadas por la tecnología para unirse a nuestro equipo.
                             <br /><br />
                             Si te apasiona la innovación y queres enfrentar nuevos desafíos ¡Nos encantaría conocerte!
                             <br /><br />
@@ -53,7 +53,7 @@ const WhyRucavi = () => {
                                 element.scrollIntoView({ behavior: 'smooth' });
                             }
                         }}
-                        className='bg-transparent rounded-full outline outline-1 outline-violet-200 hover:bg-violet-200 text-[#5B24FD] text-[1.2rem] md:text-[1.6rem] font-[400] ml-8 md:ml-4 mt-4 md:mt-[4.6rem] py-1 md:pt-0.5 md:pb-1 w-20 md:w-44 transition-colors duration-200 ease-in-out'>
+                        className='bg-transparent rounded-full outline outline-1 outline-violet-200 hover:bg-violet-200 text-[#5B24FD] text-[1.2rem] md:text-[1.6rem] font-[400] ml-8 md:ml-8 mt-4 md:mt-[4.6rem] py-1 md:pt-0.5 md:pb-1 w-20 md:w-44 transition-colors duration-200 ease-in-out'>
                         Email
                     </button>
                 </div>

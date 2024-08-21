@@ -14,13 +14,13 @@ const Partners = () => {
                 <div className="flex-1 flex flex-col md:flex-row items-center justify-center mx-auto">
                     <div className="flex flex-row md:flex-1 justify-center space-x-10 md:space-x-28">
                         <div className="flex-shrink-0">
-                            <img src={Resumatio} alt="Resumatio" className="partner-logo h-16 w-auto md:h-20" />
+                            <img src={Resumatio} alt="Resumatio" className="partner-logo h-14 w-auto md:h-20" />
                         </div>
                         <div className="flex-shrink-0">
-                            <img src={BigPons} alt="Big Pons" className="partner-logo h-16 w-auto md:h-20" />
+                            <img src={BigPons} alt="Big Pons" className="partner-logo h-14 w-auto md:h-20" />
                         </div>
                         <div className="flex-shrink-0">
-                            <img src={Par} alt="Patitas Al Rescate" className="partner-logo h-16 w-auto md:h-20" />
+                            <img src={Par} alt="Patitas Al Rescate" className="partner-logo h-14 w-auto md:h-20" />
                         </div>
                     </div>
                 </div>
