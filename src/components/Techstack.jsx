@@ -21,7 +21,7 @@ const tecnologias = [
 
 function Techstack() {
     return (
-        <div className="pb-6 md:pb-20 sm:pt-20" id="TechStack">
+        <div className="pb-6 md:pb-20" id="TechStack">
             <section className="flex flex-wrap gap-0 sm:mx-8 px-auto mx-4">
                 <div className="flex flex-wrap w-full sm:w-1/2 rounded-t-3xl pt-6 sm:pt-16 bg-[#EBE5FF] px-2 sm:px-40">
                     <p className="text-[1.6rem] sm:text-5xl font-[650] tracking-normal md:tracking-wide leading-8 sm:leading-12 px-6 md:px-0">

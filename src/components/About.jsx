@@ -23,11 +23,12 @@ function About() {
 
         // Detect screen size
         const isMobile = window.matchMedia('(max-width: 768px)').matches;
+        const isTablet = window.matchMedia('(min-width: 769px) and (max-width: 1024px)').matches;
 
         if (isMobile) {
-            // Animation for mobile
+            // Animation for mobile 
             gsap.to(sections, {
-                xPercent: -104.5 * (sections.length - 1), // Adjust this value based on your design
+                xPercent: -104.5 * (sections.length - 1),
                 ease: 'none',
                 scrollTrigger: {
                     trigger: container,
@@ -47,11 +48,34 @@ function About() {
                     end: () => `+=${totalWidth - container.offsetWidth}`,
                 },
             });
+        } else if (isTablet) {
+            // Animation for tablets -----------------------------------------------------------------------
+            gsap.to(sections, {
+                xPercent: -90 * (sections.length - 1),
+                ease: 'none',
+                scrollTrigger: {
+                    trigger: container,
+                    pin: true,
+                    scrub: 0.6,
+                    end: () => `+=${totalWidth - container.offsetWidth}`,
+                },
+            });
+
+            gsap.to(lineRef.current, {
+                xPercent: -25 * (sections.length - 1),
+                ease: 'none',
+                scrollTrigger: {
+                    trigger: container,
+                    scrub: 0.6,
+                    start: 'top top',
+                    end: () => `+=${totalWidth - container.offsetWidth}`,
+                },
+            });
         } else {
-            // Animation for desktop
-            const sectionWidth = container.offsetWidth / sections.length; // Width of one section
-            const scrollSpeed = 0.75; // Adjust this value to slow down the scroll
-            const additionalScroll = 2; // Adjust this value to increase the scroll distance
+            // Animation for desktop -----------------------------------------------------------------------
+            const sectionWidth = container.offsetWidth / sections.length;
+            const scrollSpeed = 0.75;
+            const additionalScroll = 2;
 
             gsap.to(sections, {
                 xPercent: -70 * (sections.length - 1),
@@ -60,7 +84,7 @@ function About() {
                     trigger: container,
                     pin: true,
                     scrub: scrollSpeed,
-                    end: () => `+=${totalWidth - container.offsetWidth + additionalScroll * sectionWidth}`, // Increased scroll distance
+                    end: () => `+=${totalWidth - container.offsetWidth + additionalScroll * sectionWidth}`,
                 },
             });
 
@@ -71,7 +95,7 @@ function About() {
                     trigger: container,
                     scrub: scrollSpeed,
                     start: 'top top',
-                    end: () => `+=${totalWidth - container.offsetWidth + additionalScroll * sectionWidth}`, // Increased scroll distance
+                    end: () => `+=${totalWidth - container.offsetWidth + additionalScroll * sectionWidth}`,
                 },
             });
         }
