@@ -60,7 +60,7 @@
 }
 
 .pin-spacer {
-  background: linear-gradient(to bottom, #DACDFE, #C0A9FF);
+  background: linear-gradient(to bottom, #D8CAFE, #C0A9FF);
 }
 
 .folderGradient {
@@ -160,7 +160,7 @@
   }
 
   .pin-spacer {
-    background: linear-gradient(to bottom, #CEBEFF, #C0A9FF);
+    background: linear-gradient(to bottom, #D1C2FE, #C0A9FF);
     padding-bottom: 1px !important;
   }
 
