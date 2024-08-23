@@ -55,7 +55,7 @@ function About() {
             const additionalScroll = 2;
 
             gsap.to(sections, {
-                xPercent: -45.5 * (sections.length + 1.5),
+                xPercent: -67.5 * (sections.length + 1.5),
                 ease: 'none',
                 scrollTrigger: {
                     trigger: container,
@@ -66,7 +66,7 @@ function About() {
             });
 
             gsap.to(lineRef.current, {
-                xPercent: -19.01 * (sections.length - 1),
+                xPercent: -36.01 * (sections.length - 1),
                 ease: 'none',
                 scrollTrigger: {
                     trigger: container,
@@ -92,7 +92,7 @@ function About() {
             });
 
             gsap.to(lineRef.current, {
-                xPercent: -16.7 * (sections.length + 1),
+                xPercent: -20.9 * (sections.length + 1),
                 ease: 'none',
                 scrollTrigger: {
                     trigger: container,

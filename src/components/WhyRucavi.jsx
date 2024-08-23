@@ -25,7 +25,7 @@ const WhyRucavi = () => {
                             <span className="inline-block font-semibold text-gray-900 z-20">RUCAVI</span>
                         </span>
                     </h1>
-                    <div className="relative inline-block z-10 -mt-[4.55rem] md:-mt-[7.15rem] flex justify-center items-center h-full">
+                    <div className="relative inline-block z-10 -mt-[4.7rem] md:-mt-[7.15rem] flex justify-center items-center h-full">
                         <img src={LaptopByN} alt="Rounded" className="flex shrink-0 w-full h-full rounded-3xl object-cover ml-[1.025rem] md:ml-24 scale-100 md:scale-[1.18]" />
                         <p className="text-sm md:text-xl absolute inset-0 flex items-end justify-left text-gray-900 pl-8 md:pl-[4.2rem] pb-14 md:pb-32 text-lg tracking-wider">Estamos recibiendo cvs.</p>
                     </div>
