@@ -9,21 +9,23 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
+      },
       transitionDuration: {
         '1500': '1500ms',
         '2000': '2000ms',
         '3000': '3000ms',
-        '5000': '5000ms', // 5 seconds
-        '10000': '10000ms', // 10 seconds
+        '5000': '5000ms',
+        '10000': '10000ms',
       },
-      poppins: ['Poppins', 'sans-serif'],
       borderRadius: {
         '5xl': '12rem',
-        '7xl': '16rem', // Ajusta el valor según tus necesidades
+        '7xl': '16rem',
       },
     },
   },
   plugins: [
     flowbite.plugin(),
   ],
-}
+};

@@ -116,7 +116,7 @@ const ContactUs = () => {
 
                 {/* Formato para escritorio */}
                 <div className="hidden lg:block w-full md:w-1/2 p-4 mr-40">
-                    <h1 className="text-[#EBE5FF] font-bold text-6xl md:text-7xl">Contactanos</h1>
+                    <h1 className="text-[#EBE5FF] font-semibold text-6xl md:text-7xl">Contactanos</h1>
                     <div className="mt-6">
                         <input
                             type="text"
@@ -142,7 +142,7 @@ const ContactUs = () => {
                     </div>
                 </div>
                 <div className="hidden lg:block w-full md:w-1/2 p-4 flex flex-col">
-                    <h2 className="text-[#5C24FF] font-semibold text-3xl pl-12 mt-0 mb-[3.1rem]">Formulario de contacto.</h2>
+                    <h2 className="text-[#5C24FF] font-medium text-3xl pl-12 mt-0 mb-[3.1rem]">Formulario de contacto.</h2>
                     <div className="mt-6">
                         <input
                             type="email"
@@ -157,7 +157,7 @@ const ContactUs = () => {
                     </div>
                     <button
                         type="submit"
-                        className={`bg-[#EBE5FF] font-medium text-[#5C23FE] text-2xl px-10 pb-1.5 rounded-3xl hover:cursor-pointer mt-[13.3rem] w-min ml-2
+                        className={`bg-[#EBE5FF] font-medium text-[#5C23FE] text-2xl px-10 py-1.5 rounded-3xl hover:cursor-pointer mt-[13.3rem] w-min ml-2 transition transform
                 ${loading ? 'cursor-wait' : 'hover:bg-[#D1C9FF] hover:text-[#3C0FD8]'} 
                 ${submitted ? 'cursor-default' : ''}`}
                         disabled={loading || submitted}

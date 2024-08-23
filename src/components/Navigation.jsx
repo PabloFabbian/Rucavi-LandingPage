@@ -52,23 +52,23 @@ function Navigation() {
                     </Navbar.Brand>
                     <Navbar.Toggle className="hover:bg-transparent text-gray-700 mt-1" onClick={toggleOverlay} />
                     <Navbar.Collapse className="hidden md:flex">
-                        <Navbar.Link onClick={(e) => handleSmoothScroll(e, '#AboutUs')} className='nav-li text-sm text-[0.950rem] font-semibold navbar-link relative group hover:cursor-pointer'>
+                        <Navbar.Link onClick={(e) => handleSmoothScroll(e, '#AboutUs')} className='nav-li text-sm text-[0.950rem] font-medium navbar-link relative group hover:cursor-pointer'>
                             <span>Nosotros</span>
                             <div className="absolute bottom-0 left-0 w-full h-0.5 bg-transparent transition-all duration-300 transform origin-bottom scale-x-0 group-hover:scale-x-100 -mb-1 bg-violet-500 z-50"></div>
                         </Navbar.Link>
-                        <Navbar.Link onClick={(e) => handleSmoothScroll(e, '#TechStack')} className='nav-li text-sm text-[0.950rem] font-semibold navbar-link relative group hover:cursor-pointer'>
+                        <Navbar.Link onClick={(e) => handleSmoothScroll(e, '#TechStack')} className='nav-li text-sm text-[0.950rem] font-medium navbar-link relative group hover:cursor-pointer'>
                             <span>Tecnología</span>
                             <div className="absolute bottom-0 left-0 w-full h-0.5 bg-transparent transition-all duration-300 transform origin-bottom scale-x-0 group-hover:scale-x-100 -mb-1 bg-violet-500 z-50"></div>
                         </Navbar.Link>
-                        <Navbar.Link onClick={(e) => handleSmoothScroll(e, '#JoinUs')} className='nav-li text-sm text-[0.950rem] font-semibold navbar-link relative group hover:cursor-pointer'>
+                        <Navbar.Link onClick={(e) => handleSmoothScroll(e, '#JoinUs')} className='nav-li text-sm text-[0.950rem] font-medium navbar-link relative group hover:cursor-pointer'>
                             <span>Sumate</span>
                             <div className="absolute bottom-0 left-0 w-full h-0.5 bg-transparent transition-all duration-300 transform origin-bottom scale-x-0 group-hover:scale-x-100 -mb-1 bg-violet-500 z-50"></div>
                         </Navbar.Link>
-                        <Navbar.Link onClick={(e) => handleSmoothScroll(e, '#Partners')} className='nav-li text-sm text-[0.950rem] font-semibold navbar-link relative group hover:cursor-pointer'>
+                        <Navbar.Link onClick={(e) => handleSmoothScroll(e, '#Partners')} className='nav-li text-sm text-[0.950rem] font-medium navbar-link relative group hover:cursor-pointer'>
                             <span>Partners</span>
                             <div className="absolute bottom-0 left-0 w-full h-0.5 bg-transparent transition-all duration-300 transform origin-bottom scale-x-0 group-hover:scale-x-100 -mb-1 bg-violet-500 z-50"></div>
                         </Navbar.Link>
-                        <Navbar.Link onClick={(e) => handleSmoothScroll(e, '#ContactUs')} className='nav-li text-sm text-[0.950rem] font-semibold navbar-link relative group hover:cursor-pointer'>
+                        <Navbar.Link onClick={(e) => handleSmoothScroll(e, '#ContactUs')} className='nav-li text-sm text-[0.950rem] font-medium navbar-link relative group hover:cursor-pointer'>
                             <span>Contactanos</span>
                             <div className="absolute bottom-0 left-0 w-full h-0.5 bg-transparent transition-all duration-300 transform origin-bottom scale-x-0 group-hover:scale-x-100 -mb-1 bg-violet-500 z-50"></div>
                         </Navbar.Link>
