@@ -94,13 +94,13 @@ function Navigation() {
                         Nosotros.
                     </a>
                     <a onClick={(e) => handleSmoothScroll(e, '#TechStack')} className="text-[2.6rem] font-bold text-left hover:cursor-pointer">
-                        Tecnologias.
-                    </a>
-                    <a onClick={(e) => handleSmoothScroll(e, '#Partners')} className="text-[2.6rem] font-bold text-left hover:cursor-pointer">
-                        Partners.
+                        Tecnología.
                     </a>
                     <a onClick={(e) => handleSmoothScroll(e, '#JoinUs')} className="text-[2.6rem] font-bold text-left hover:cursor-pointer">
                         Sumate.
+                    </a>
+                    <a onClick={(e) => handleSmoothScroll(e, '#Partners')} className="text-[2.6rem] font-bold text-left hover:cursor-pointer">
+                        Partners.
                     </a>
                     <a onClick={(e) => handleSmoothScroll(e, '#ContactUs')} className="text-[2.6rem] font-bold text-left hover:cursor-pointer">
                         Contactanos.

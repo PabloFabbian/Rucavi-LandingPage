@@ -251,3 +251,9 @@
 .no-scroll {
   overflow: hidden;
 }
+
+@media (max-width: 430px) {
+  .Subtitle {
+    font-size: clamp(3.7vw, 1.5vw, 0.97rem);
+  }
+}
