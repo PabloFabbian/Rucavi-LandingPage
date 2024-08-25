@@ -37,3 +37,4 @@ dist-ssr
 .env.development.local
 .env.test.local
 .env.production.local
+swa-cli.config.json
