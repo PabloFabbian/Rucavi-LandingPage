@@ -6,14 +6,14 @@ import Techstack from './components/Techstack'
 import WhyRucavi from './components/WhyRucavi'
 import Partners from './components/Partners'
 import ContactUs from './components/ContactUs'
-import MobilePopup from './components/MobilePopup'
+{/*import MobilePopup from './components/MobilePopup'*/ }
 import Footer from './components/Footer'
 
 function App() {
 
   return (
     <div className="backgroundGradient">
-      <MobilePopup />
+      {/*<MobilePopup />*/}
       <Navigation />
       <Hero />
       <About />

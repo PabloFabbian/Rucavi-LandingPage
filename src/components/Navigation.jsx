@@ -77,7 +77,7 @@ function Navigation() {
             </div>
 
             {/* Overlay for mobile */}
-            <div className={`fixed inset-0 bg-[#EBE5FF] z-50 transform ${isOverlayOpen ? 'translate-y-0' : '-translate-y-full'} transition-transform duration-300 ease-in-out md:hidden flex flex-col items-center justify-center`}>
+            <div className={`fixed inset-0 bg-[#EBE5FF] z-50 transform ${isOverlayOpen ? 'translate-y-0' : '-translate-y-[105%]'} transition-transform duration-300 ease-in-out md:hidden flex flex-col items-center justify-center`}>
                 <div onClick={(e) => handleSmoothScroll(e, '#Home')} className='flex flex-nowrap items-center justify-center mt-5 -ml-32'>
                     <img src={RucaviLogo} className="h-11 mr-6" alt="Rucavi Logo" />
                     <img src={RucaviText} className="h-[1.75rem]" alt="Rucavi" />

@@ -17,7 +17,7 @@ const WhyRucavi = () => {
         <div className="px-0 md:px-2 md:px-16 pt-8 pb-6 why-degrade" id="JoinUs">
             <div className="flex flex-col lg:flex-row flex-wrap md:flex-nowrap items-start md:gap-40 mx-2 md:ml-12 md:mb-10">
                 <div className="flex-1 text-left relative">
-                    <h1 className="text-4xl md:text-6xl text-[#EAE4FE] font-semibold leading-none mb-4 ml-6 md:ml-16 relative z-20">
+                    <h1 className="text-3xl md:text-6xl text-[#EAE4FE] font-semibold leading-none mb-4 ml-6 md:ml-16 relative z-20">
                         <div className="mb-0.5">
                             Forma <span> parte de</span> <br />
                         </div>

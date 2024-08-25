@@ -92,7 +92,7 @@ function About() {
             });
 
             gsap.to(lineRef.current, {
-                xPercent: -20.9 * (sections.length + 1),
+                xPercent: -15.8002 * (sections.length + 1),
                 ease: 'none',
                 scrollTrigger: {
                     trigger: container,
