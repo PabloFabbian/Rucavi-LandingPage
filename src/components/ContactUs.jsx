@@ -47,7 +47,7 @@ const ContactUs = () => {
     return (
         <div className='pt-3' id='ContactUs'>
             {/* Formulario para dispositivos móviles */}
-            <form onSubmit={handleSubmit} className="block lg:hidden w-full max-w-md p-4 px-4 mx-auto">
+            <form onSubmit={handleSubmit} className="block lg:hidden w-full max-w-md p-4 px-6 mx-auto">
                 <h1 className="text-[#111827] font-semibold text-4xl sm:text-5xl mb-2 text-start">Contactanos</h1>
                 <h2 className="text-[#EBE5FF] font-base text-2xl sm:text-3xl mb-6 text-start">Formulario de contacto.</h2>
 
