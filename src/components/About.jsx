@@ -132,7 +132,7 @@ function About() {
     }, []);
 
     const SmallButton = ({ children, className }) => (
-        <button className={`bg-purple-200 text-indigo-600 font-semibold rounded-2xl mt-10 sm:mt-20 px-4 pb-1 pt-1.5 hover:bg-purple-300 hover:cursor-default transition-colors duration-300 ease-in-out text-xs md:text-base ${className}`}>
+        <button className={`bg-purple-200 text-indigo-600 font-semibold rounded-2xl mt-10 sm:mt-20 px-4 pb-1 pt-1.5 hover:cursor-default transition-colors duration-300 ease-in-out text-xs md:text-base ${className}`}>
             {children}
         </button>
     );

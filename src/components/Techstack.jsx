@@ -23,8 +23,8 @@ function Techstack() {
     return (
         <div className="pb-6 md:pb-20" id="TechStack">
             <section className="flex flex-wrap gap-0 sm:mx-8 px-auto mx-4">
-                <div className="flex flex-wrap w-full sm:w-1/2 rounded-t-3xl pt-6 sm:pt-20 sm:pb-6 bg-[#EBE5FF] px-2 sm:px-40">
-                    <p className="text-[1.6rem] sm:text-3xl lg:text-5xl font-semibold px-6 md:px-0">
+                <div className="flex justify-center items-center w-full sm:w-1/2 rounded-t-3xl pt-6 sm:pt-20 sm:pb-6 bg-[#EBE5FF] px-2 sm:px-40">
+                    <p className="text-[1.6rem] sm:text-4xl lg:text-5xl font-semibold px-6 md:px-0 text-left">
                         Tecnologías con las que trabajamos
                     </p>
                 </div>
@@ -44,7 +44,6 @@ function Techstack() {
                 <div className="carousel-wrapper pb-6 pt-4">
                     <div className="carousel">
                         {tecnologias.map((tech, index) => {
-                            // Determine the number of words to show based on the viewport width
                             const isMobile = window.innerWidth <= 768;
                             const wordCount = isMobile ? 2 : 3;
                             const words = tech.descrip.split(' ');
@@ -64,9 +63,8 @@ function Techstack() {
                                 </div>
                             );
                         })}
-                        {/* Duplicate the elements to create the infinite effect */}
+
                         {tecnologias.map((tech, index) => {
-                            // Determine the number of words to show based on the viewport width
                             const isMobile = window.innerWidth <= 768;
                             const wordCount = isMobile ? 2 : 3;
                             const words = tech.descrip.split(' ');

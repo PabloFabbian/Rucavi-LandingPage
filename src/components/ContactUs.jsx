@@ -47,7 +47,7 @@ const ContactUs = () => {
     return (
         <div className='pt-3' id='ContactUs'>
             {/* Formulario para dispositivos móviles */}
-            <form onSubmit={handleSubmit} className="block lg:hidden w-full max-w-md p-4 px-6">
+            <form onSubmit={handleSubmit} className="block lg:hidden w-full max-w-md p-4 px-4 mx-auto">
                 <h1 className="text-[#111827] font-semibold text-4xl sm:text-5xl mb-2 text-start">Contactanos</h1>
                 <h2 className="text-[#EBE5FF] font-base text-2xl sm:text-3xl mb-6 text-start">Formulario de contacto.</h2>
 
@@ -114,8 +114,8 @@ const ContactUs = () => {
             </form>
 
             {/* Formulario para escritorio */}
-            <form onSubmit={handleSubmit} className="flex flex-col md:flex-row items-center justify-center px-2 md:px-28 -pb-8 md:pb-24">
-                <div className="hidden lg:block w-full md:w-1/2 p-4 mr-40">
+            <form onSubmit={handleSubmit} className="flex flex-col md:flex-row items-center justify-center px-2 md:px-20 -pb-8 md:pb-24">
+                <div className="hidden lg:block w-full md:w-1/2 p-4 md:mr-32">
                     <h1 className="text-[#EBE5FF] font-semibold text-6xl md:text-7xl">Contactanos</h1>
                     <div className="mt-6">
                         <input

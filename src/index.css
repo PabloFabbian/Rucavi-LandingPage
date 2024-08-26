@@ -257,3 +257,90 @@
     font-size: clamp(3.7vw, 1.5vw, 0.97rem);
   }
 }
+
+@media (min-width: 500px) and (max-width: 1025px) {}
+
+@media (min-width: 1025px) and (max-width: 1600px) {
+  .WhyContainer {
+    gap: 40px !important;
+    margin-bottom: 4rem !important;
+  }
+
+  .WhyContainer button {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .WhyContainer h1 {
+    margin-left: 1rem !important;
+    font-size: 3.5rem;
+  }
+
+  .text-custom-md {
+    font-size: 1.2rem;
+  }
+
+  .SC-Container {
+    margin-top: 0px !important;
+  }
+
+  .LaptopByN {
+    margin-left: 0rem !important;
+    margin-top: -1.2rem;
+    scale: 0.9;
+  }
+
+  .RecibimosCVs {
+    font-size: 1rem !important;
+  }
+
+  .SubtitleContainer {
+    justify-content: center !important;
+    margin-left: -4rem;
+  }
+
+  .Subtitle {
+    margin-right: 0.5rem !important;
+    margin-left: 5.5rem !important;
+  }
+
+  .DividerLine {
+    margin-top: 0.3rem !important;
+    width: 90% !important;
+  }
+
+  .WhyTextContainer {
+    padding-right: 2rem !important;
+  }
+
+  .WhiteArrow {
+    left: -1.5rem !important;
+  }
+
+  .WhyContact span {
+    margin-right: 45px;
+  }
+
+  .ContactBar {
+    padding-inline: 3.2rem !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 1rem !important;
+  }
+
+  .WhyBottomLine {
+    margin-inline: 5.2rem !important;
+  }
+
+  .WhyBottomText {
+    margin-left: 5rem !important;
+  }
+
+  .PartnersImg {
+    gap: 6rem !important;
+  }
+
+  .FooterContainer {
+    padding-right: 16.1rem !important;
+  }
+}
