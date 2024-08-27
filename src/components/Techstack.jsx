@@ -38,7 +38,7 @@ function Techstack() {
             </section>
 
             <div
-                className="rounded-b-3xl rounded-tr-none md:rounded-tr-3xl bg-[#EBE5FF]
+                className="TechnologiesContainer rounded-b-3xl rounded-tr-none md:rounded-tr-3xl bg-[#EBE5FF]
                 mx-4 sm:mx-8 px-0 md:px-[10px] py-0 md:py-16"
             >
                 <div className="carousel-wrapper pb-6 pt-4">
