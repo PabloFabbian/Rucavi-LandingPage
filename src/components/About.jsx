@@ -140,7 +140,7 @@ function About() {
                 <section className="sections py-4 px-5 sm:px-0 mx-0 sm:mx-0 min-w-[100vw] md:min-w-[35rem]" ref={(el) => (sectionsRef.current[0] = el)}>
                     <h1 className="AboutTitles text-3xl md:text-5xl text-indigo-600 font-semibold -mb-5 sm:mb-5">Sobre Nosotros</h1>
                     <div className="TextContainer1 text-[#9471FF] mt-12">
-                        <img src={WhiteArrowIcon} className="absolute left-1 md:-left-16 top-[5.4rem] md:top-[7.3rem] h-3 w-3 sm:h-5 sm:w-5" />
+                        <img src={WhiteArrowIcon} className="WhiteArrow1 absolute left-1 md:-left-16 top-[5.4rem] md:top-[7.3rem] h-3 w-3 sm:h-5 sm:w-5" />
                         <h2 className="AboutSub text-base md:text-2xl font-medium text-violet-500 mb-4 sm:mb-8">[Consultoría de sistemas de información]</h2>
                         <p className="AboutText mb-4 text-sm md:text-xl">
                             En RUCAVI nos definimos no solo como una empresa de consultoría de sistemas de información, sino como un equipo donde
@@ -158,7 +158,7 @@ function About() {
                 <section className="sections py-4 px-5 sm:px-0 mx-6 sm:mx-0 min-w-[100vw] md:min-w-[35rem]" ref={(el) => (sectionsRef.current[1] = el)}>
                     <h1 className="AboutTitles text-3xl md:text-5xl text-indigo-600 font-semibold -mb-5 sm:mb-5 whitespace-nowrap">Cómo nace la empresa</h1>
                     <div className="TextContainer2 text-[#9471FF] mt-12 -mb-7">
-                        <img src={WhiteArrowIcon} className="absolute left-1 md:-left-16 top-[5.4rem] md:top-[7.3rem] h-3 w-3 sm:h-5 sm:w-5" />
+                        <img src={WhiteArrowIcon} className="WhiteArrow1 absolute left-1 md:-left-16 top-[5.4rem] md:top-[7.3rem] h-3 w-3 sm:h-5 sm:w-5" />
                         <h2 className="AboutSub text-base md:text-2xl font-medium text-violet-500 mb-4 sm:mb-8">[La unión de un grupo]</h2>
                         <p className="AboutText mb-4 text-sm md:text-xl">
                             RUCAVI tiene sus raíces en la unión de un
@@ -174,7 +174,7 @@ function About() {
                 <section className="sections py-4 px-5 sm:px-0 mx-0 sm:mx-0 min-w-[100vw] md:min-w-[35rem]" ref={(el) => (sectionsRef.current[2] = el)}>
                     <h1 className="AboutTitles text-3xl md:text-5xl text-indigo-600 font-semibold -ml-4 sm:-ml-7 -mb-5 sm:mb-5 whitespace-nowrap">¿Qué es lo que hacemos?</h1>
                     <div className="TextContainer3 text-[#9471FF] mt-12 sm:-mb-7">
-                        <img src={WhiteArrowIcon} className="absolute left-1 md:-left-16 top-[5.4rem] md:top-[7.3rem] h-3 w-3 sm:h-5 sm:w-5" />
+                        <img src={WhiteArrowIcon} className="WhiteArrow1 absolute left-1 md:-left-16 top-[5.4rem] md:top-[7.3rem] h-3 w-3 sm:h-5 sm:w-5" />
                         <h2 className="AboutSub text-base md:text-2xl font-medium text-violet-500 mb-4 sm:mb-8">[Desarrollo de soluciones tecnológicas]</h2>
                         <p className="AboutText mb-4 text-sm md:text-xl">Nuestro objetivo en RUCAVI es desarrollar soluciones tecnológicas de vanguardia que desafíen los límites y potencien el crecimiento empresarial.</p>
                         <p className="AboutText mb-4 text-sm md:text-xl">

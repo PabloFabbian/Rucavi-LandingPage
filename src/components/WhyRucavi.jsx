@@ -41,7 +41,7 @@ const WhyRucavi = () => {
                     </div>
                     <hr className="DividerLine border-[#1D1D1B] mt-2 md:mt-9 w-[86.66667%] md:w-[82.333333%] ml-8 mr-2" />
                     <div className="WhyTextContainer mb-4 text-[0.9rem] md:text-[1.65rem] text-[#EAE4FE] font-[350] leading-[1.05] mt-6 md:mt-8 px-4 md:pr-24 pl-8">
-                        <img src={WhiteArrowIcon} className="WhiteArrow absolute left-[0.6rem] top-[4.5rem] lg:-left-[2.2rem] lg:top-[7.6rem] md:h-5 h-3 md:w-5 w-3" />
+                        <img src={WhiteArrowIcon} className="WhiteArrow2 absolute left-[0.6rem] top-[4.5rem] lg:-left-[2.2rem] lg:top-[7.6rem] md:h-5 h-3 md:w-5 w-3" />
                         <p className="text-pretty text-custom-md">En RUCAVI, estamos constantemente buscando mentes brillantes y apasionadas por la tecnología para unirse a nuestro equipo.
                             <br /><br />
                             Si te apasiona la innovación y queres enfrentar nuevos desafíos ¡Nos encantaría conocerte!

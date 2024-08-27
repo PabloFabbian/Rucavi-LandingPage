@@ -34,6 +34,10 @@
   color: #8c00ff !important;
 }
 
+#Home {
+  scroll-margin-top: 4.8rem;
+}
+
 #TechStack {
   scroll-margin-top: 250px;
 }
@@ -269,6 +273,10 @@
     margin-top: 5rem !important;
   }
 
+  .Sub {
+    margin-top: -1.2rem !important;
+  }
+
   /*------------------------- About Us --------------------------*/
   .BiggerAboutContainer {
     padding-top: 0rem !important;
@@ -319,11 +327,20 @@
     padding-top: 0px !important;
   }
 
+  .WhiteArrow1 {
+    top: 7.95rem !important;
+    left: -3rem !important;
+  }
+
   .VioletArrow {
     opacity: 0;
   }
 
   /*-------------------------- Tech Stack -------------------------*/
+  #TechStack {
+    scroll-margin-top: 125px;
+  }
+
   .TechTitle {
     font-size: 2.35rem !important;
     padding-inline: 2rem;
@@ -370,6 +387,7 @@
 
   .RecibimosCVs {
     font-size: 1rem !important;
+    padding-left: 0.45rem !important;
   }
 
   .SubtitleContainer {
@@ -389,10 +407,12 @@
 
   .WhyTextContainer {
     padding-right: 2rem !important;
+    margin-top: 1.2rem !important;
   }
 
-  .WhiteArrow {
+  .WhiteArrow2 {
     left: -1.5rem !important;
+    top: 7.45rem !important;
   }
 
   .WhyContact span {
@@ -415,16 +435,25 @@
   }
 
   /*------------------------ Partners ---------------------------*/
+  #Partners {
+    scroll-margin-top: 150px;
+  }
+
   .PartnersImg {
     gap: 6rem !important;
   }
 
   /*----------------------- Footer ----------------------------*/
+  #ContactUs {
+    scroll-margin-top: 50px;
+  }
+
   .FooterContainer {
     padding-right: 16.1rem !important;
   }
 
   .DividerLine2 {
     margin-inline: 6% !important;
+    margin-top: 1.5rem !important;
   }
 }
