@@ -33,7 +33,7 @@ function About() {
                 scrollTrigger: {
                     trigger: container,
                     pin: true,
-                    scrub: 0.6,
+                    scrub: 0.75,
                     end: () => `+=${totalWidth - container.offsetWidth}`,
                 },
             });
@@ -43,7 +43,7 @@ function About() {
                 ease: 'none',
                 scrollTrigger: {
                     trigger: container,
-                    scrub: 0.6,
+                    scrub: 0.75,
                     start: 'top top',
                     end: () => `+=${totalWidth - container.offsetWidth}`,
                 },
@@ -51,8 +51,6 @@ function About() {
         } else if (isTablet) {
             // Animation for Tablets ------------------------------------------------------------------------------- 
             const sectionWidth = container.offsetWidth / sections.length;
-            const scrollSpeed = 0.75;
-            const additionalScroll = 2;
 
             gsap.to(sections, {
                 xPercent: -67.5 * (sections.length + 1.5),
@@ -60,8 +58,8 @@ function About() {
                 scrollTrigger: {
                     trigger: container,
                     pin: true,
-                    scrub: scrollSpeed,
-                    end: () => `+=${totalWidth - container.offsetWidth + additionalScroll * sectionWidth}`,
+                    scrub: 0.75,
+                    end: () => `+=${totalWidth - container.offsetWidth + 2 * sectionWidth}`,
                 },
             });
 
@@ -70,15 +68,14 @@ function About() {
                 ease: 'none',
                 scrollTrigger: {
                     trigger: container,
-                    scrub: scrollSpeed,
+                    scrub: 0.75,
                     start: 'top top',
-                    end: () => `+=${totalWidth - container.offsetWidth + additionalScroll * sectionWidth}`,
+                    end: () => `+=${totalWidth - container.offsetWidth + 2 * sectionWidth}`,
                 },
             });
         } else if (isLaptop) {
             // Animation for Laptops --------------------------------------------------------------------------------
             const sectionWidth = container.offsetWidth / sections.length;
-            const additionalScroll = 2;
 
             gsap.to(sections, {
                 xPercent: -120 * (sections.length - 0.8),
@@ -98,14 +95,12 @@ function About() {
                     trigger: container,
                     scrub: 0.75,
                     start: 'top top',
-                    end: () => `+=${totalWidth - container.offsetWidth + additionalScroll * sectionWidth}`,
+                    end: () => `+=${totalWidth - container.offsetWidth + 2 * sectionWidth}`,
                 },
             });
         } else {
             // Animation for Desktops -------------------------------------------------------------------------------
             const sectionWidth = container.offsetWidth / sections.length;
-            const scrollSpeed = 0.75;
-            const additionalScroll = 2;
 
             gsap.to(sections, {
                 xPercent: -70 * (sections.length - 0.5),
@@ -113,8 +108,8 @@ function About() {
                 scrollTrigger: {
                     trigger: container,
                     pin: true,
-                    scrub: scrollSpeed,
-                    end: () => `+=${totalWidth - container.offsetWidth + additionalScroll * sectionWidth}`,
+                    scrub: 0.75,
+                    end: () => `+=${totalWidth - container.offsetWidth + 2 * sectionWidth}`,
                 },
             });
 
@@ -123,22 +118,22 @@ function About() {
                 ease: 'none',
                 scrollTrigger: {
                     trigger: container,
-                    scrub: scrollSpeed,
+                    scrub: 0.75,
                     start: 'top top',
-                    end: () => `+=${totalWidth - container.offsetWidth + additionalScroll * sectionWidth}`,
+                    end: () => `+=${totalWidth - container.offsetWidth + 2 * sectionWidth}`,
                 },
             });
         }
     }, []);
 
     const SmallButton = ({ children, className }) => (
-        <button className={`bg-purple-200 text-indigo-600 font-semibold rounded-2xl mt-10 sm:mt-20 px-4 pb-1 pt-1.5 hover:cursor-default transition-colors duration-300 ease-in-out text-xs md:text-base ${className}`}>
+        <button className={`SectionButtons bg-purple-200 text-indigo-600 font-semibold rounded-2xl mt-10 sm:mt-20 px-4 pb-1 pt-1.5 hover:cursor-default transition-colors duration-300 ease-in-out text-xs md:text-base ${className}`}>
             {children}
         </button>
     );
 
     return (
-        <div className="overflow-hidden relative sm:pt-[60px] pl-1 sm:pl-14 z-10 -mt-32 sm:-mt-20" id="AboutUs" ref={containerRef}>
+        <div className="AboutContainer overflow-hidden relative sm:pt-[60px] pl-1 sm:pl-14 -mt-32 sm:-mt-20" id="AboutUs" ref={containerRef}>
             <div ref={lineRef} className="sticky top-[7.8rem] md:top-[9rem] lg:top-[10.5rem] left-0 w-[calc(21.5rem*3)] lg:w-[calc(48.5rem*3)] h-0.5 bg-gray-500 ml-6 md:ml-10 lg:ml-44"></div>
 
             <div className="flex pt-16 pb-10 md:py-14 lg:py-20 md:px-10 lg:px-44 w-full space-x-4 sm:space-x-80">
@@ -174,7 +169,7 @@ function About() {
                         <p className="mb-4 text-sm md:text-xl">En RUCAVI nos enorgullece contar con un equipo que prioriza la satisfacción del cliente y la excelencia en cada proyecto que emprendemos.</p>
                     </div>
                     <SmallButton>EQUIPO</SmallButton>
-                    <img src={VioletArrowIcon} className="absolute -left-[6rem] md:left-[33rem] top-[28.5rem] md:top-[38rem] h-12 w-12" />
+                    <img src={VioletArrowIcon} className="VioletArrow absolute sticky -left-[6rem] md:left-[33rem] top-[28.5rem] md:top-[38rem] h-12 w-12" />
                 </section>
                 <section className="sections py-4 px-5 sm:px-0 mx-0 sm:mx-0 min-w-[100vw] md:min-w-[35rem]" ref={(el) => (sectionsRef.current[2] = el)}>
                     <h1 className="text-3xl md:text-5xl text-indigo-600 font-semibold -ml-4 sm:-ml-7 -mb-5 sm:mb-5 whitespace-nowrap">¿Qué es lo que hacemos?</h1>

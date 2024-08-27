@@ -23,8 +23,8 @@ function Techstack() {
     return (
         <div className="pb-6 md:pb-20" id="TechStack">
             <section className="flex flex-wrap gap-0 sm:mx-8 px-auto mx-4">
-                <div className="flex justify-center items-center w-full sm:w-1/2 rounded-t-3xl pt-6 sm:pt-20 sm:pb-6 bg-[#EBE5FF] px-2 sm:px-40">
-                    <p className="text-[1.6rem] sm:text-4xl lg:text-5xl font-semibold px-6 md:px-0 text-left">
+                <div className="TechTitleContainer flex justify-center items-center w-full sm:w-1/2 rounded-t-3xl pt-6 sm:pt-14 sm:pb-6 bg-[#EBE5FF] px-2 sm:px-40">
+                    <p className="TechTitle text-left text-[1.6rem] sm:text-4xl lg:text-5xl font-semibold px-6 md:px-0">
                         Tecnologías con las que trabajamos
                     </p>
                 </div>

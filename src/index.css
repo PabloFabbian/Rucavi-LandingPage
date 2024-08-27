@@ -67,7 +67,6 @@
   background: linear-gradient(to bottom, #BFA9FF, #C2ACFF);
 }
 
-
 /*------------------------------------------------*/
 
 @keyframes fadeIn {
@@ -261,6 +260,43 @@
 @media (min-width: 500px) and (max-width: 1025px) {}
 
 @media (min-width: 1025px) and (max-width: 1600px) {
+
+  /*------------------------- Hero Header --------------------------*/
+  .HeroQuestion {
+    padding-bottom: 0px !important;
+    padding-top: 0.5rem !important;
+  }
+
+  .ContactUs-button {
+    margin-top: 5rem !important;
+  }
+
+  /*------------------------- About Us --------------------------*/
+  .AboutContainer {
+    padding-top: 0rem !important;
+    margin-top: -4.7rem !important;
+  }
+
+  .SectionButtons {
+    margin-top: 2rem !important;
+  }
+
+  .pin-spacer {
+    background: linear-gradient(to bottom, #DBCFFE, #C0A9FF);
+    padding-top: 0px !important;
+  }
+
+  .VioletArrow {
+    opacity: 0;
+  }
+
+  /*-------------------------- Tech Stack -------------------------*/
+  .TechTitle {
+    font-size: 2.4rem !important;
+    font-weight: 600;
+  }
+
+  /*------------------------- Why Rucavi --------------------------*/
   .WhyContainer {
     gap: 40px !important;
     margin-bottom: 4rem !important;
@@ -272,8 +308,8 @@
   }
 
   .WhyContainer h1 {
-    margin-left: 1rem !important;
-    font-size: 3.5rem;
+    margin-left: 0rem !important;
+    font-size: 3.2rem;
   }
 
   .text-custom-md {
@@ -285,7 +321,7 @@
   }
 
   .LaptopByN {
-    margin-left: 0rem !important;
+    margin-left: -3rem !important;
     margin-top: -1.2rem;
     scale: 0.9;
   }
@@ -336,11 +372,17 @@
     margin-left: 5rem !important;
   }
 
+  /*------------------------ Partners ---------------------------*/
   .PartnersImg {
     gap: 6rem !important;
   }
 
+  /*----------------------- Footer ----------------------------*/
   .FooterContainer {
     padding-right: 16.1rem !important;
+  }
+
+  .DividerLine2 {
+    margin-inline: 6% !important;
   }
 }

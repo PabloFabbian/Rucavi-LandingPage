@@ -40,7 +40,7 @@ function Navigation() {
     };
 
     return (
-        <div>
+        <div className="pb-[4.8rem]">
             <div className={`fixed w-full transition-transform duration-250 ${scrollDirection === 'up' ? 'translate-y-0' : '-translate-y-full'} z-40`}>
                 <Navbar fluid className={`py-4 ${isTop ? 'navbar-degrade1' : 'navbar-degrade2'}`}>
                     <Navbar.Brand

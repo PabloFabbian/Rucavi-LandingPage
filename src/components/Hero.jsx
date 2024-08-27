@@ -14,7 +14,7 @@ function Hero() {
     };
 
     return (
-        <div className='px-3 sm:px-8 pt-[4.8rem] sm:pt-[4.8rem] pb-4 hero-degrade' id='Home'>
+        <div className='px-3 sm:px-8 pb-4' id='Home'>
             <div className="relative h-screen sm:h-screen z-20">
                 <img
                     src={GrayBackground}
@@ -29,11 +29,11 @@ function Hero() {
                     </div>
                     <h3 className="text-xl sm:text-[2rem] font-[500] text-[#5C26FD] tracking-wide ml-1 -mt-52 sm:mt-0 fade-in fade-in-delay-1">Consultora IT.</h3>
                 </header>
-                <section className='relative z-10 flex flex-col tracking-wide py-12 sm:py-24 pl-4 sm:pl-24 mt-64 sm:mt-0'>
+                <section className='HeroQuestion relative z-10 flex flex-col tracking-wide py-12 sm:py-24 pl-4 sm:pl-24 mt-64 sm:mt-0'>
                     <h2 className='text-lg sm:text-3xl font-normal text-violet-100 fade-in fade-in-delay-2'>¿Buscas <span className='font-semibold'>soluciones</span> de alto</h2>
                     <h2 className='text-lg sm:text-3xl font-normal text-violet-100 fade-in fade-in-delay-2'>impacto para tu negocio?</h2>
                 </section>
-                <a href="#ContactUs" onClick={(e) => handleSmoothScroll(e, '#ContactUs')} className='inline-flex relative z-10 flex ml-4 sm:m-24 bg-[#EBE5FF] text-indigo-600 rounded-full font-semibold text-lg sm:text-xl px-4 sm:px-6 py-1.5 fade-in-button transition transform hover:bg-purple-300'>Contactanos</a>
+                <a href="#ContactUs" onClick={(e) => handleSmoothScroll(e, '#ContactUs')} className='ContactUs-button inline-flex relative z-10 flex ml-4 sm:m-24 bg-[#EBE5FF] text-indigo-600 rounded-full font-semibold text-lg sm:text-xl px-4 sm:px-6 py-1.5 fade-in-button transition transform hover:bg-purple-300'>Contactanos</a>
                 <div onClick={(e) => handleSmoothScroll(e, '#AboutUs')} className="Arrow absolute bottom-[5.9rem] sm:bottom-[7.2rem] right-0 z-10 hover:cursor-pointer">
                     <svg
                         className="w-10 sm:w-12 overflow-visible"
